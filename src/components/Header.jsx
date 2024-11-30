@@ -113,7 +113,7 @@ export function Header({onDmsOverviewClick }) {
                 </NavLink>
 
                 {/* Dropdown Menu */}
-                <div className="absolute top-[3em] left-1/2 transform -translate-x-1/4 hidden group-hover:flex p-4 shadow-lg space-x-6 bg-[#e6e8f0] rounded-lg">
+                <div className="absolute top-[2.5em] left-1/2 transform -translate-x-1/4 hidden group-hover:flex p-4 shadow-lg space-x-6 bg-[#e6e8f0] rounded-lg">
                   <div className="flex space-x-6">
                     <div className='bg-white p-3 rounded-lg'>
                       <h6 className="font-semibold w-[22em] sm:w-[18em] md:w-[20em] lg:w-[22em] xl:w-[20em] text-sm sm:text-base md:text-lg lg:text-xl mb-3">
@@ -122,35 +122,35 @@ export function Header({onDmsOverviewClick }) {
                       <div className="grid grid-cols-2 gap-4">
                         <div className="space-y-2">
                         <h6
-                            className="font-semibold text-sm cursor-pointer text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 pl-2"
+                            className="font-semibold text-sm cursor-pointer text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2"
                             onClick={onDmsOverviewClick}
                           >
                             DMS Overview
                           </h6>
                         </div>
                         <div className="space-y-2">
-                          <h6 className="font-semibold text-sm cursor-pointer text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 pl-2">Inventory Acquisition</h6>
+                          <h6 className="font-semibold text-sm cursor-pointer text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Inventory Acquisition</h6>
                         </div>
                         <div className="space-y-2">
-                          <h6 className="font-semibold text-sm cursor-pointer text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 pl-2">Customer Relations Management (CRM)</h6>
+                          <h6 className="font-semibold text-sm cursor-pointer text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Customer Relations Management (CRM)</h6>
                         </div>
                         <div className="space-y-2">
-                          <h6 className="font-semibold text-sm cursor-pointer text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 pl-2">Buy Here Pay Here (BHPH)</h6>
+                          <h6 className="font-semibold text-sm cursor-pointer text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Buy Here Pay Here (BHPH)</h6>
                         </div>
                         <div className="space-y-2">
-                          <h6 className="font-semibold text-sm cursor-pointer text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 pl-2">DealerCenter's Mobile App </h6>
+                          <h6 className="font-semibold text-sm cursor-pointer text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">DealerCenter's Mobile App </h6>
                         </div>
                         <div className="space-y-2">
-                          <h6 className="font-semibold text-sm cursor-pointer text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 pl-2">Dealer Websites</h6>
+                          <h6 className="font-semibold text-sm cursor-pointer text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Dealer Websites</h6>
                         </div>
                         <div className="space-y-2">
-                          <h6 className="font-semibold text-sm cursor-pointer text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 pl-2">Digital Marketing</h6>
+                          <h6 className="font-semibold text-sm cursor-pointer text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Digital Marketing</h6>
                         </div>
                         <div className="space-y-2">
-                          <h6 className="font-semibold text-sm cursor-pointer text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 pl-2">Digital Retailing Solution</h6>
+                          <h6 className="font-semibold text-sm cursor-pointer text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Digital Retailing Solution</h6>
                         </div>
                         <div className="space-y-2">
-                          <h6 className="font-semibold text-sm cursor-pointer text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 pl-2">Dashboard & Reporting </h6>
+                          <h6 className="font-semibold text-sm cursor-pointer text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Dashboard & Reporting </h6>
                         </div>
                       </div>
 
@@ -162,21 +162,21 @@ export function Header({onDmsOverviewClick }) {
                           <h6 className="font-semibold text-sm text-[#07124a]">Lender Overview</h6>
                           <h6 className="font-semibold text-sm text-[#07124a]">Loan Originations</h6>
                           <ul className="space-y-2">
-                            <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 pl-2">Credit Application Network</li>
-                            <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 pl-2">Bookout Vehicle Valuations</li>
-                            <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 pl-2">Digital Contracting</li>
-                            <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 pl-2">Digital Document Services</li>
+                            <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Credit Application Network</li>
+                            <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Bookout Vehicle Valuations</li>
+                            <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Digital Contracting</li>
+                            <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Digital Document Services</li>
                           </ul>
                         </div>
                         <div className="space-y-2">
                           <h6 className="font-semibold text-sm text-[#07124a]">F&I Overview</h6>
                           <ul className="space-y-2">
-                            <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 pl-2">Credit Application</li>
-                            <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 pl-2">Compliance</li>
-                            <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 pl-2">Accelerated Title</li>
-                            <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 pl-2">Menu</li>
-                            <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 pl-2">Aftermarket</li>
-                            <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 pl-2">Digital Contracting & Signing</li>
+                            <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Credit Application</li>
+                            <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Compliance</li>
+                            <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Accelerated Title</li>
+                            <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Menu</li>
+                            <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Aftermarket</li>
+                            <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Digital Contracting & Signing</li>
                           </ul>
                         </div>
                       </div>
