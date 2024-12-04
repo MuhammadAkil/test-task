@@ -99,7 +99,7 @@ function MobileNavigation() {
 
 export function Header({onDmsOverviewClick }) {
   return (
-    <header className="py-10">
+    <header className="py-4">
       <Container>
         <nav className="relative z-50 flex justify-between">
           <div className="flex items-center md:gap-x-12">
@@ -113,7 +113,7 @@ export function Header({onDmsOverviewClick }) {
                 </NavLink>
 
                 {/* Dropdown Menu */}
-                <div className="absolute top-[2.5em] left-1/2 transform -translate-x-1/4 hidden group-hover:flex p-4 shadow-lg space-x-6 bg-[#e6e8f0] rounded-lg">
+                <div className="absolute top-[2.5em] left-3/4 transform -translate-x-1/4 hidden group-hover:flex p-4 shadow-lg space-x-6 bg-[#e6e8f0] rounded-lg">
                   <div className="flex space-x-6">
                     <div className='bg-white p-3 rounded-lg'>
                       <h6 className="font-semibold w-[22em] sm:w-[18em] md:w-[20em] lg:w-[22em] xl:w-[20em] text-sm sm:text-base md:text-lg lg:text-xl mb-3">
@@ -213,10 +213,6 @@ export function Header({onDmsOverviewClick }) {
                 Get started <span className="hidden lg:inline">today</span>
               </span>
             </Button>
-
-            <div className="hidden md:block border border-blue-900 rounded-md">
-              <NavLink href="/login">Login</NavLink>
-            </div>
 
             <div className="hidden md:block border border-blue-900 rounded-md">
               <NavLink href="/login">Dealerheim DMS Login</NavLink>

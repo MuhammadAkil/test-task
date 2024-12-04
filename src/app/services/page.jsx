@@ -1,7 +1,7 @@
 "use client";
-
+import { Button } from '@/components/Button';
 import Image from 'next/image'
-import backgroundImage from '@/images/DMSPIc.jpg';
+import dms from '@/images/dms.png';
 import inventory from '@/images/Top-Banner-Inventory.png';
 import crm from '@/images/Top-Banner-Inventory.png';
 import BHPH from '@/images/Top-Banner-BHPH.png';
@@ -30,12 +30,12 @@ export default function Services() {
   
   return (
     
-    <Container className="relative">
+    <Container className="relative ">
 
-        <div className="mx-auto w-100% px-4 sm:px-6 lg:px-8 mb-40 bg-gradient-to-r from-gray-100 via-blue-100 to-white py-16 rounded-lg">
+        <div className="mx-auto w-full px-4 sm:px-6 lg:px-8 mb-40 bg-gradient-to-r from-gray-100 via-blue-100 to-white py-16 rounded-lg">
   <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
     <div>
-      <h2 className="font-display text-3xl tracking-tight text-dark sm:text-4xl" data-aos="fade-up">
+      <h2 className="font-display text-3xl tracking-tight text-dark sm:text-4xl">
         ALL-IN ONE CLOUD BASED DEALER MANAGEMENT SOLUTIONS
       </h2>
       <p className="mt-4 text-sm tracking-tight text-dark">
@@ -46,7 +46,7 @@ export default function Services() {
       <Image
         src={banner}
         alt="DMS Software"
-        className="rounded-lg shadow-lg w-full max-w-md md:max-w-full"
+        className="rounded-lg  w-full max-w-md md:max-w-full"
       />
     </div>
   </div>
@@ -60,7 +60,7 @@ export default function Services() {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
       <div className="flex justify-center"  data-aos="fade-right">
         <Image
-          src={backgroundImage}
+          src={dms}
           alt="DMS Software"
           className="rounded-lg shadow-lg w-full max-w-md md:max-w-full"
         />
@@ -90,7 +90,15 @@ export default function Services() {
           <li>Dashboards, Reporting & Analytics</li>
           <li>Send Scheduled Reports</li>
           <li>Available on Mobile App</li>
-        </ul>
+            </ul>
+            
+             <div className='my-10'>
+              <Button href="/register" className="bg-blue-500 text-black rounded-pill hover:bg-yellow-600 px-4 py-2 shadow-md">
+                <span>
+                  Learn More
+                </span>
+              </Button>
+            </div>
       </div>
     </div>
       </div>
@@ -121,7 +129,14 @@ export default function Services() {
         <li>SiriusXM Radio</li>
         <li>Dashboards, Reporting & Analytics</li>
         <li>Available on Mobile App</li>
-      </ul>
+            </ul>
+            <div className='my-10'>
+              <Button href="/register" className="bg-blue-500 text-black rounded-pill hover:bg-yellow-600 px-4 py-2 shadow-md">
+                <span>
+                  Learn More
+                </span>
+              </Button>
+            </div>
     </div>
     <div className="flex justify-center"  data-aos="fade-right">
       <Image
@@ -164,7 +179,14 @@ export default function Services() {
         <li>Dashboards, Reporting & Analytics</li>
         <li>Send Scheduled Reports</li>
         <li>Available on Mobile App</li>
-      </ul>
+            </ul>
+            <div className='my-10'>
+              <Button href="/register" className="bg-blue-500 text-black rounded-pill hover:bg-yellow-600 px-4 py-2 shadow-md">
+                <span>
+                  Learn More
+                </span>
+              </Button>
+            </div>
     </div>
   </div>
 </div>
@@ -190,7 +212,14 @@ export default function Services() {
         <li>QuickBooks Integration</li>
         <li>Reporting Credit to Bureaus with Datalinx</li>
         <li>Dashboards, Reporting & Analytics</li>
-      </ul>
+            </ul>
+            <div className='my-10'>
+              <Button href="/register" className="bg-blue-500 text-black rounded-pill hover:bg-yellow-600 px-4 py-2 shadow-md">
+                <span>
+                  Learn More
+                </span>
+              </Button>
+            </div>
           </div>
           <div className="flex justify-center"  data-aos="fade-right">
       <Image
@@ -231,7 +260,14 @@ export default function Services() {
         <li>Email & SMS Integration</li>
         <li>Receive Realtime Notifications</li>
         <li>Instant Chat, Video Calling, and Facebook Messenger in Integrated Messaging Center</li>
-      </ul>
+            </ul>
+            <div className='my-10'>
+              <Button href="/register" className="bg-blue-500 text-black rounded-pill hover:bg-yellow-600 px-4 py-2 shadow-md">
+                <span>
+                  Learn More
+                </span>
+              </Button>
+            </div>
     </div>
   </div>
 </div>
@@ -260,7 +296,14 @@ export default function Services() {
         <li>Unlimited Website Requests & Updates</li>
         <li>Dedicated Website & Support Team</li>
         <li>Dashboards, Reporting & Analytics</li>
-      </ul>
+            </ul>
+            <div className='my-10'>
+              <Button href="/register" className="bg-blue-500 text-black rounded-pill hover:bg-yellow-600 px-4 py-2 shadow-md">
+                <span>
+                  Learn More
+                </span>
+              </Button>
+            </div>
           </div>
           <div className="flex justify-center"  data-aos="fade-right">
       <Image
@@ -298,7 +341,14 @@ export default function Services() {
         <li>Reputation Management</li>
         <li>Dashboards, Reporting & Analytics</li>
         <li>Access to 30+ marketing sites such as Facebook Marketplace, OfferUp, and CarGurus!</li>
-      </ul>
+            </ul>
+            <div className='my-10'>
+              <Button href="/register" className="bg-blue-500 text-black rounded-pill hover:bg-yellow-600 px-4 py-2 shadow-md">
+                <span>
+                  Learn More
+                </span>
+              </Button>
+            </div>
     </div>
   </div>
 </div>
@@ -323,7 +373,14 @@ export default function Services() {
         <li>Integrate Lenders Rate Sheets & Filter Criteria</li>
         <li>Pre-Built with Westlake Financial Underwriting Decisions</li>
         <li>Display Decisions Based on your Desired Gross</li>
-      </ul>
+            </ul>
+            <div className='my-10'>
+              <Button href="/register" className="bg-blue-500 text-black rounded-pill hover:bg-yellow-600 px-4 py-2 shadow-md">
+                <span>
+                  Learn More
+                </span>
+              </Button>
+            </div>
           </div>
            <div className="flex justify-center"  data-aos="fade-right">
       <Image
@@ -367,7 +424,14 @@ export default function Services() {
             <li>Measure Sales Revenue & Profitability</li>
             <li>Monitor your BHPH Portfolio & Collection Activities</li>
             <li>Measure the Effectiveness of Your Website Traffic</li>
-          </ul>
+            </ul>
+            <div className='my-10'>
+              <Button href="/register" className="bg-blue-500 text-black rounded-pill hover:bg-yellow-600 px-4 py-2 shadow-md">
+                <span>
+                  Learn More
+                </span>
+              </Button>
+            </div>
         </div>
       </div>
     </div>

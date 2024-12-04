@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.animate-marquee {
+  display: flex;
+  gap: 100px;
+  animation: slide-marquee 60s linear infinite;
+  white-space: nowrap;
+  direction: ltr;
+}
+
+@keyframes slide-marquee {
+  0% {
+    transform: translateX(-200%);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-marquee img {
+  object-fit: contain;
+  width: 150px; 
+  height: auto;
+  filter: grayscale(100%) brightness(0) contrast(100%) opacity(1); 
+  transition: filter 0.3s ease; 
+}
+
+.animate-marquee:before {
+  content: '';
+  display: flex;
+  gap: 50px;
+  flex-shrink: 0;
+  animation: none; 
+}
