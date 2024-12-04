@@ -39,7 +39,7 @@ export default function RootLayout({ children }) {
     >
       <body className="flex h-full flex-col">
         <Header />
-        <main className="!bg-[#000]">{children}</main>
+        <main>{children}</main>
       <Footer/>
       </body>
     </html>

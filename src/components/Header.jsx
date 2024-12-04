@@ -83,7 +83,7 @@ function MobileNavigation() {
             as="div"
             className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5"
           >
-            <MobileNavLink href="#solution">Solution</MobileNavLink>
+            <MobileNavLink href="services">Solution</MobileNavLink>
             <MobileNavLink href="#features">Features</MobileNavLink>
             <MobileNavLink href="#chatWithUS">Chat With US</MobileNavLink>
             <MobileNavLink href="#pricing">Pricing</MobileNavLink>
@@ -108,7 +108,7 @@ export function Header({onDmsOverviewClick }) {
             </Link>
             <div className="hidden md:flex md:flex-wrap md:gap-3 lg:gap-x-4 relative">
               <div className="group">
-                <NavLink href="#solution">
+                <NavLink href="services">
                   Solution
                 </NavLink>
 
