@@ -15,7 +15,7 @@ const features = [
     name: 'Reporting',
     summary: 'Stay on top of things with always up-to-date reporting features.',
     description:
-      'We talked about reporting in the section above but we needed three items here, so mentioning it one more time for posterity.',
+      'Our reporting feature helps you track the financial status of your business in real-time. With custom reports and intuitive charts, you’ll never be out of the loop.',
     image: screenshotProfitLoss,
     icon: function ReportingIcon() {
       let id = useId()
@@ -46,11 +46,11 @@ const features = [
     },
   },
   {
-    name: 'Inventory',
+    name: 'Inventory Management',
     summary:
-      'Never lose track of what’s in stock with accurate inventory tracking.',
+      'Keep track of your stock levels and streamline inventory management.',
     description:
-      'We don’t offer this as part of our software but that statement is inarguably true. Accurate inventory tracking would help you for sure.',
+      'Easily manage your product inventory and keep an accurate record of items. Stay informed with real-time inventory levels and receive alerts when stock is low.',
     image: screenshotInventory,
     icon: function InventoryIcon() {
       return (
@@ -74,11 +74,11 @@ const features = [
     },
   },
   {
-    name: 'Contacts',
+    name: 'Contact Management',
     summary:
-      'Organize all of your contacts, service providers, and invoices in one place.',
+      'Manage your service providers, clients, and important contacts all in one place.',
     description:
-      'This also isn’t actually a feature, it’s just some friendly advice. We definitely recommend that you do this, you’ll feel really organized and professional.',
+      'Keep all your contacts organized, whether it’s clients, suppliers, or team members. Our contact management tool allows you to add detailed information and easily find the right contact when you need it.',
     image: screenshotContacts,
     icon: function ContactsIcon() {
       return (
@@ -213,7 +213,7 @@ export function SecondaryFeatures() {
     <section
       id="secondary-features"
       aria-label="Features for simplifying everyday business tasks"
-      className="pb-14 pt-20 sm:pb-20 sm:pt-32 lg:pb-32"
+      className="pb-14 px-16 pt-20 sm:pb-20 sm:pt-32 lg:pb-32"
     >
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">

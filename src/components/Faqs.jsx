@@ -5,51 +5,56 @@ import backgroundImage from '@/images/background-faqs.jpg'
 
 const faqs = [
   {
-    question: 'Does TaxPal handle VAT?',
+    question: 'What features does DealerCenter offer for managing deals?',
     answer:
-      'Well no, but if you move your company offshore you can probably ignore it.',
+      'DealerCenter provides Desking & Deal Management, Finance & Insurance Calculation, and integration with over 1200 lenders for sending and receiving deals.',
   },
   {
-    question: 'Can I pay for my subscription via purchase order?',
-    answer: 'Absolutely, we are happy to take your money in all forms.',
-  },
-  {
-    question: 'How do I apply for a job at TaxPal?',
+    question: 'Can I manage my inventory from my phone?',
     answer:
-      'We only hire our customers, so subscribe for a minimum of 6 months and then let’s talk.',
+      'Yes, with DealerCenter’s Mobile App, you can upload inventory, scan VINs, manage photos and videos, and access auction run lists.',
   },
   {
-    question: 'What was that testimonial about tax fraud all about?',
+    question: 'How does DealerCenter support Buy Here Pay Here (BHPH)?',
     answer:
-      'TaxPal is just a software application, ultimately your books are your responsibility.',
+      'DealerCenter’s BHPH module includes portfolio management, collections workflow, recurring payments, and QuickBooks integration.',
   },
   {
-    question:
-      'TaxPal sounds horrible but why do I still feel compelled to purchase?',
+    question: 'Does DealerCenter integrate with accounting software?',
     answer:
-      'This is the power of excellent visual design. You just can’t resist it, no matter how poorly it actually functions.',
+      'Yes, DealerCenter integrates seamlessly with QuickBooks for accounting management.',
   },
   {
-    question:
-      'I found other companies called TaxPal, are you sure you can use this name?',
+    question: 'How can I improve my digital marketing with DealerCenter?',
     answer:
-      'Honestly not sure at all. We haven’t actually incorporated or anything, we just thought it sounded cool and made this website.',
+      'DealerCenter offers automated classified listings, SEO services, PPC ad management, and retargeting on the Google Display Network.',
   },
   {
-    question: 'How do you generate reports?',
+    question: 'Can I create and manage customer relationships with DealerCenter?',
     answer:
-      'You just tell us what data you need a report for, and we get our kids to create beautiful charts for you using only the finest crayons.',
+      'Absolutely! DealerCenter’s CRM suite helps manage customer activity, leads, and communications through SMS, email, chat, and video.',
   },
   {
-    question: 'Can we expect more inventory features?',
-    answer: 'In life it’s really better to never expect anything at all.',
-  },
-  {
-    question: 'I lost my password, how do I get into my account?',
+    question: 'Does DealerCenter offer vehicle registration and titling services?',
     answer:
-      'Send us an email and we will send you a copy of our latest password spreadsheet so you can find your information.',
+      'Yes, DealerCenter supports vehicle registration, titling, and temporary tags.',
   },
-]
+  {
+    question: 'Can I generate custom reports and dashboards?',
+    answer:
+      'Yes, DealerCenter allows you to create custom reports and dashboards, analyze ROI, and receive scheduled reports via email.',
+  },
+  {
+    question: 'Is there a website solution available with DealerCenter?',
+    answer:
+      'Yes, DealerCenter offers custom responsive websites, SSL hosting, lead integration, and support for third-party widgets.',
+  },
+  {
+    question: 'Does DealerCenter support digital retailing for online shoppers?',
+    answer:
+      'Yes, DealerCenter’s Digital Retailing Solution allows customers to personalize payments, prequalify for financing, and view lender decisions.',
+  },
+];
 
 export function Faqs() {
   const [activeIndex, setActiveIndex] = useState(null)
