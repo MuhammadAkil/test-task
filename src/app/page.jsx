@@ -28,7 +28,7 @@ export default function Home() {
         <PrimaryFeatures />
         <SecondaryFeatures />
         <div ref={callToActionRef}>
-          <CallToAction />
+          {/* <CallToAction /> */}
         </div>
         <Testimonials />
         <Pricing />
