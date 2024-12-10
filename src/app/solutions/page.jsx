@@ -71,7 +71,7 @@ export default function Services() {
           Dealer Management System (DMS)
         </h2>
         <p className="mt-4 text-lg tracking-tight text-dark" >
-          DealerCenter’s fully integrated mobile- and web-based solution gives
+          DealerCenter&apos;s fully integrated mobile- and web-based solution gives
           you industry-leading technology that combines all the tools you need
           into a single platform. DealerCenter makes it easier than ever to run
           your business.
@@ -126,7 +126,7 @@ export default function Services() {
         <li>Photo Overlay Templates</li>
         <li>Photo Slideshow and Video Editing</li>
         <li>Window Stickers & Hang Tags</li>
-        <li>Buyer’s Guides</li>
+        <li>Buyer&apos;s Guides</li>
         <li>SiriusXM Radio</li>
         <li>Dashboards, Reporting & Analytics</li>
         <li>Available on Mobile App</li>
@@ -200,7 +200,7 @@ export default function Services() {
         Buy Here Pay Here (BHPH)
       </h2>
       <p className="mt-4 text-lg tracking-tight text-dark" >
-        DealerCenter’s BHPH module is equipped with the collections, reporting, and account management tools to ensure the health and continued growth of your BHPH portfolio.
+        DealerCenter&apos;s BHPH module is equipped with the collections, reporting, and account management tools to ensure the health and continued growth of your BHPH portfolio.
       </p>
       <ul className="mt-6 grid grid-cols-1 md:grid-cols-2 font-bold gap-x-8 gap-y-4 text-dark list-disc marker:text-blue-500">
         <li>Portfolio Management</li>
@@ -244,10 +244,10 @@ export default function Services() {
     </div>
     <div>
       <h2 className="font-display text-3xl tracking-tight text-dark sm:text-4xl" data-aos="fade-right">
-        DealerCenter’s Mobile App
+        DealerCenter&apos;s Mobile App
       </h2>
       <p className="mt-4 text-lg tracking-tight text-dark" >
-        DealerCenter’s Mobile App lets you oversee your deals, upload inventory, run vehicle history reports, communicate with customers, and more—all from your phone.
+        DealerCenter&apos;s Mobile App lets you oversee your deals, upload inventory, run vehicle history reports, communicate with customers, and more—all from your phone.
       </p>
       <ul className="mt-6 grid grid-cols-1 md:grid-cols-2 font-bold pl-8 gap-x-8 gap-y-4 text-dark list-disc marker:text-blue-500" >
         <li>VIN Scan</li>
@@ -256,7 +256,7 @@ export default function Services() {
         <li>Vehicle Book Values</li>
         <li>Vehicle History Reports</li>
         <li>Market Pricing</li>
-        <li>Driver’s License Scan</li>
+        <li>Driver&apos;s License Scan</li>
         <li>Customer Management (CRM)</li>
         <li>Email & SMS Integration</li>
         <li>Receive Realtime Notifications</li>
@@ -281,7 +281,7 @@ export default function Services() {
         Dealer Websites
       </h2>
       <p className="mt-4 text-lg tracking-tight text-dark" >
-        DealerCenter’s websites are designed with mobile users in mind, ensuring your site dynamically fits any screen size. Free custom design and setup, auto-sync inventory using DealerCenter’s mobile app, and always secure with SSL Certificate.
+        DealerCenter&apos;s websites are designed with mobile users in mind, ensuring your site dynamically fits any screen size. Free custom design and setup, auto-sync inventory using DealerCenter&apos;s mobile app, and always secure with SSL Certificate.
       </p>
       <ul className="mt-6 grid grid-cols-1 md:grid-cols-2 font-bold gap-x-8 gap-y-4 text-dark list-disc marker:text-blue-500" >
         <li>Custom Responsive Websites</li>
@@ -364,13 +364,13 @@ export default function Services() {
         Digital Retailing Solution
       </h2>
       <p className="mt-4 text-lg tracking-tight text-dark" >
-        DealerCenter’s Digital Retailing Solution helps you create an online shopping experience customers expect today. This creates a more engaged shopper to help increase your incoming leads.
+        DealerCenter&apos;s Digital Retailing Solution helps you create an online shopping experience customers expect today. This creates a more engaged shopper to help increase your incoming leads.
       </p>
       <ul className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-x-8 font-bold gap-y-4 text-dark list-disc marker:text-blue-500" >
         <li>Engage & Convert Online Shoppers</li>
         <li>Allow Customers to Personalize their Monthly Payment</li>
         <li>Prequalify your customer without affecting their credit</li>
-        <li>View Customer’s Credit Information</li>
+        <li>View Customer&apos;s Credit Information</li>
         <li>Integrate Lenders Rate Sheets & Filter Criteria</li>
         <li>Pre-Built with Westlake Financial Underwriting Decisions</li>
         <li>Display Decisions Based on your Desired Gross</li>

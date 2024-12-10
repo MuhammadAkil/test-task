@@ -12,7 +12,6 @@ import { Container } from '@/components/Container'
 import { Logo } from '@/components/Logo'
 import { NavLink } from '@/components/NavLink'
 
-import style from '../styles/tailwind.css'
 
 function MobileNavLink({ href, children }) {
   return (
@@ -185,7 +184,7 @@ export function Header() {
                               href="/solutions#mobile-app"
                               className="font-semibold text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2"
                             >
-                              DealerCenter's Mobile App
+                              DealerCenter&apos;s Mobile App
                             </a>
                           </div>
                           <div className="space-y-2">

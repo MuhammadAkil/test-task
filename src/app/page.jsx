@@ -1,9 +1,7 @@
 'use client';
 
 import { useRef } from 'react';
-import { CallToAction } from '@/components/CallToAction'
 import { Faqs } from '@/components/Faqs'
-import { Header } from '@/components/Header'
 import { Pricing } from '@/components/Pricing'
 import { PrimaryFeatures } from '@/components/PrimaryFeatures'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
@@ -27,9 +25,7 @@ export default function Home() {
       <Hero />
         <PrimaryFeatures />
         <SecondaryFeatures />
-        <div ref={callToActionRef}>
-          {/* <CallToAction /> */}
-        </div>
+        
         <Testimonials />
         <Pricing />
         <Faqs />
