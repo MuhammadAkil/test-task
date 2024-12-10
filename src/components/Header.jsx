@@ -1,11 +1,11 @@
 'use client'
-import { useState } from 'react'; 
+import { useState } from 'react';
 import { Fragment } from 'react'
 import { useRef } from 'react';
 import Link from 'next/link'
 import { Popover, Transition } from '@headlessui/react'
 import clsx from 'clsx'
-import { FaChevronDown } from 'react-icons/fa'; 
+import { FaChevronDown } from 'react-icons/fa';
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
@@ -98,166 +98,180 @@ function MobileNavigation() {
   )
 }
 
-export function Header({ onDmsOverviewClick }) {
-    
+export function Header() {
   const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
 
   const handleSolutionsClick = () => {
-    setIsSolutionsOpen(prevState => !prevState); 
+    setIsSolutionsOpen((prevState) => !prevState);
   };
+
+  const handleMouseEnter = () => {
+    setIsSolutionsOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsSolutionsOpen(false);
+  };
+
   return (
     <header className="py-4 shadow-md">
       <Container>
         <nav className="relative z-50 flex justify-between">
-          <div className="flex items-center md:gap-x-12">
-            <Link href="#" aria-label="Home">
-              <Logo className="h-10 w-auto" />
+        <div className="flex items-center md:gap-x-12">
+            <Link href="/" aria-label="Home">
+              <Logo className="h-10 w-auto"  />
             </Link>
             <div className="hidden md:flex md:flex-wrap md:gap-3 lg:gap-x-4 relative">
-              <div className="group">
-             <div
-  className={`flex items-center cursor-pointer  px-2 rounded-lg`}
-  onClick={handleSolutionsClick}
+              <div className="group"
+              onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
 >
-  <NavLink href="/solutions" className="flex items-center text-gray-800">
-    <span>Solutions</span>
-    <FaChevronDown className={`ml-1 transition-transform ${isSolutionsOpen ? 'rotate-180' : ''}`} />
-  </NavLink>
-</div>
+                <div
+                  className={`flex items-center cursor-pointer  px-2 rounded-lg`}
+                  onClick={handleSolutionsClick}
+                >
+                  <NavLink href="/solutions" className="flex items-center text-gray-800">
+                    <span>Solutions</span>
+                    <FaChevronDown className={`ml-1 transition-transform ${isSolutionsOpen ? 'rotate-180' : ''}`} />
+                  </NavLink>
+                </div>
 
                 {/* Dropdown Menu */}
                 {isSolutionsOpen && (
-                <div className="absolute top-[2.5em] left-3/4 transform -translate-x-1/4 hidden group-hover:flex p-4 shadow-lg space-x-6 bg-[#e6e8f0] rounded-lg">
-                  <div className="flex space-x-6">
-                    <div className='bg-white p-3 rounded-lg'>
-                      <h6 className="font-semibold w-[22em] sm:w-[18em] md:w-[20em] lg:w-[22em] xl:w-[20em] text-sm sm:text-base md:text-lg lg:text-xl mb-3">
-                      Services
-                      </h6>
-                      <div className="grid grid-cols-2 gap-4">
-  <div className="space-y-2">
-    <a
-      href="#dms-overview"
-      className="font-semibold text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2"
-    >
-      DMS Overview
-    </a>
-  </div>
-  <div className="space-y-2">
-    <a
-      href="#inventory-acquisition"
-      className="font-semibold text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2"
-    >
-      Inventory Acquisition
-    </a>
-  </div>
-  <div className="space-y-2">
-    <a
-      href="#crm"
-      className="font-semibold text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2"
-    >
-      Customer Relations Management (CRM)
-    </a>
-  </div>
-  <div className="space-y-2">
-    <a
-      href="#bhph"
-      className="font-semibold text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2"
-    >
-      Buy Here Pay Here (BHPH)
-    </a>
-  </div>
-  <div className="space-y-2">
-    <a
-      href="#mobile-app"
-      className="font-semibold text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2"
-    >
-      DealerCenter's Mobile App
-    </a>
-  </div>
-  <div className="space-y-2">
-    <a
-      href="#dealer-websites"
-      className="font-semibold text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2"
-    >
-      Dealer Websites
-    </a>
-  </div>
-  <div className="space-y-2">
-    <a
-      href="#digital-marketing"
-      className="font-semibold text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2"
-    >
-      Digital Marketing
-    </a>
-  </div>
-  <div className="space-y-2">
-    <a
-      href="#digital-retailing"
-      className="font-semibold text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2"
-    >
-      Digital Retailing Solution
-    </a>
-  </div>
-  <div className="space-y-2">
-    <a
-      href="#dashboard-reporting"
-      className="font-semibold text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2"
-    >
-      Dashboard & Reporting
-    </a>
-  </div>
-</div>
-
-
-                    </div>
-                    <div className='bg-white p-3 rounded-lg'>
-                      <h6 className="font-semibold w-[22em] sm:w-[18em] md:w-[20em] lg:w-[22em] xl:w-[20em] text-sm sm:text-base md:text-lg lg:text-xl mb-3">For Lenders</h6>
-                      <div className="grid grid-cols-2 gap-4">
-                        <div className="space-y-2">
-                          <h6 className="font-semibold text-sm text-[#07124a]">Lender Overview</h6>
-                          <h6 className="font-semibold text-sm text-[#07124a]">Loan Originations</h6>
-                          <ul className="space-y-2">
-                            <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Credit Application Network</li>
-                            <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Bookout Vehicle Valuations</li>
-                            <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Digital Contracting</li>
-                            <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Digital Document Services</li>
-                          </ul>
+                  <div className="absolute  left-3/4 transform -translate-x-1/4 hidden group-hover:flex p-4 shadow-lg space-x-6 bg-[#e6e8f0] rounded-lg"
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+>
+                    <div className="flex space-x-6">
+                      <div className='bg-white p-3 rounded-lg'>
+                        <h6 className="font-semibold w-[22em] sm:w-[18em] md:w-[20em] lg:w-[22em] xl:w-[20em] text-sm sm:text-base md:text-lg lg:text-xl mb-3">
+                          Services
+                        </h6>
+                        <div className="grid grid-cols-2 gap-4">
+                          <div className="space-y-2">
+                            <a
+                              href="#dms-overview"
+                              className="font-semibold text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2"
+                            >
+                              DMS Overview
+                            </a>
+                          </div>
+                          <div className="space-y-2">
+                            <a
+                              href="#inventory-acquisition"
+                              className="font-semibold text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2"
+                            >
+                              Inventory Acquisition
+                            </a>
+                          </div>
+                          <div className="space-y-2">
+                            <a
+                              href="#crm"
+                              className="font-semibold text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2"
+                            >
+                              Customer Relations Management (CRM)
+                            </a>
+                          </div>
+                          <div className="space-y-2">
+                            <a
+                              href="/solutions#bhph"
+                              className="font-semibold text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2"
+                            >
+                              Buy Here Pay Here (BHPH)
+                            </a>
+                          </div>
+                          <div className="space-y-2">
+                            <a
+                              href="/solutions#mobile-app"
+                              className="font-semibold text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2"
+                            >
+                              DealerCenter's Mobile App
+                            </a>
+                          </div>
+                          <div className="space-y-2">
+                            <a
+                              href="/solutions#dealer-websites"
+                              className="font-semibold text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2"
+                            >
+                              Dealer Websites
+                            </a>
+                          </div>
+                          <div className="space-y-2">
+                            <a
+                              href="/solutions#digital-marketing"
+                              className="font-semibold text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2"
+                            >
+                              Digital Marketing
+                            </a>
+                          </div>
+                          <div className="space-y-2">
+                            <a
+                              href="/solutions#digital-retailing"
+                              className="font-semibold text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2"
+                            >
+                              Digital Retailing Solution
+                            </a>
+                          </div>
+                          <div className="space-y-2">
+                            <a
+                              href="/solutions#dashboard-reporting"
+                              className="font-semibold text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2"
+                            >
+                              Dashboard & Reporting
+                            </a>
+                          </div>
                         </div>
-                        <div className="space-y-2">
-                          <h6 className="font-semibold text-sm text-[#07124a]">F&I Overview</h6>
-                          <ul className="space-y-2">
-                            <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Credit Application</li>
-                            <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Compliance</li>
-                            <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Accelerated Title</li>
-                            <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Menu</li>
-                            <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Aftermarket</li>
-                            <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Digital Contracting & Signing</li>
-                          </ul>
+
+
+                      </div>
+                      <div className='bg-white p-3 rounded-lg'>
+                        <h6 className="font-semibold w-[22em] sm:w-[18em] md:w-[20em] lg:w-[22em] xl:w-[20em] text-sm sm:text-base md:text-lg lg:text-xl mb-3">For Lenders</h6>
+                        <div className="grid grid-cols-2 gap-4">
+                          <div className="space-y-2">
+                            <h6 className="font-semibold text-sm text-[#07124a]">Lender Overview</h6>
+                            <h6 className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Loan Originations</h6>
+                            <ul className="space-y-2">
+                              <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Credit Application Network</li>
+                              <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Bookout Vehicle Valuations</li>
+                              <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Digital Contracting</li>
+                              <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Digital Document Services</li>
+                            </ul>
+                          </div>
+                          <div className="space-y-2">
+                            <h6 className="font-semibold text-sm text-[#07124a]">F&I Overview</h6>
+                            <ul className="space-y-2">
+                              <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Credit Application</li>
+                              <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Compliance</li>
+                              <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Accelerated Title</li>
+                              <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Menu</li>
+                              <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Aftermarket</li>
+                              <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Digital Contracting & Signing</li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div className="bg-blue-900 text-white p-6 rounded-lg w-[22em] sm:w-[18em] md:w-[20em] lg:w-[22em] xl:w-[20em]">
-                      <h6 className="font-semibold text-xl">Deal Central</h6>
-                      <ul className="space-y-2">
-                        <p className="text-base">
-                          Be one of the first dealers to experience the technology, insights, and guidance from our most powerful retail solution yet.
-                        </p>
+                      <div className="bg-blue-900 text-white p-6 rounded-lg w-[22em] sm:w-[18em] md:w-[20em] lg:w-[22em] xl:w-[20em]">
+                        <h6 className="font-semibold text-xl">Deal Central</h6>
+                        <ul className="space-y-2">
+                          <p className="text-base">
+                            Be one of the first dealers to experience the technology, insights, and guidance from our most powerful retail solution yet.
+                          </p>
 
-                        <Button href="/register" className="bg-yellow-500 text-black rounded-md hover:bg-yellow-600 px-4 py-2 shadow-md">
-                          <span>
-                            Get started <span className="hidden lg:inline">today</span>
-                          </span>
-                        </Button>
-                      </ul>
+                          <Button href="/register" className="bg-yellow-500 text-black rounded-md hover:bg-yellow-600 px-4 py-2 shadow-md">
+                            <span>
+                              Get started <span className="hidden lg:inline">today</span>
+                            </span>
+                          </Button>
+                        </ul>
+                      </div>
                     </div>
                   </div>
-                </div>
-)}
+                )}
               </div>
 
-              <NavLink href="#pricing"  className="text-center md:text-left break-words w-auto lg:w-max">Pricing</NavLink>
-              <NavLink href="#footer"  className="text-center md:text-left break-words w-auto lg:w-max" >Chat with us</NavLink>
-              <NavLink href="#faq"  className="text-center md:text-left break-words w-auto lg:w-max">About Us</NavLink>
+              <NavLink href="#pricing" className="text-center md:text-left break-words w-auto lg:w-max">Pricing</NavLink>
+              <NavLink href="#footer" className="text-center md:text-left break-words w-auto lg:w-max" >Chat with us</NavLink>
+              <NavLink href="#faq" className="text-center md:text-left break-words w-auto lg:w-max">About Us</NavLink>
             </div>
 
           </div>
