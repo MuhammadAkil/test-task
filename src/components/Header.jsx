@@ -1,10 +1,11 @@
 'use client'
-
+import { useState } from 'react'; 
 import { Fragment } from 'react'
 import { useRef } from 'react';
 import Link from 'next/link'
 import { Popover, Transition } from '@headlessui/react'
 import clsx from 'clsx'
+import { FaChevronDown } from 'react-icons/fa'; 
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
@@ -83,7 +84,7 @@ function MobileNavigation() {
             as="div"
             className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5"
           >
-            <MobileNavLink href="services">Solution</MobileNavLink>
+            <MobileNavLink href="services">Solutions</MobileNavLink>
             <MobileNavLink href="#features">Features</MobileNavLink>
             <MobileNavLink href="#chatWithUS">Chat With US</MobileNavLink>
             <MobileNavLink href="#pricing">Pricing</MobileNavLink>
@@ -97,7 +98,13 @@ function MobileNavigation() {
   )
 }
 
-export function Header({onDmsOverviewClick }) {
+export function Header({ onDmsOverviewClick }) {
+    
+  const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
+
+  const handleSolutionsClick = () => {
+    setIsSolutionsOpen(prevState => !prevState); 
+  };
   return (
     <header className="py-4">
       <Container>
@@ -108,11 +115,15 @@ export function Header({onDmsOverviewClick }) {
             </Link>
             <div className="hidden md:flex md:flex-wrap md:gap-3 lg:gap-x-4 relative">
               <div className="group">
-                <NavLink href="services">
-                  Solution
-                </NavLink>
+                <div className="flex items-center cursor-pointer" onClick={handleSolutionsClick}>
+                  <NavLink href="solutions">
+                    Solutions
+                  </NavLink>
+                  <FaChevronDown className={`ml-2 transition-transform ${isSolutionsOpen ? 'transform rotate-180' : ''}`} />
+                </div>
 
                 {/* Dropdown Menu */}
+                {isSolutionsOpen && (
                 <div className="absolute top-[2.5em] left-3/4 transform -translate-x-1/4 hidden group-hover:flex p-4 shadow-lg space-x-6 bg-[#e6e8f0] rounded-lg">
                   <div className="flex space-x-6">
                     <div className='bg-white p-3 rounded-lg'>
@@ -120,39 +131,80 @@ export function Header({onDmsOverviewClick }) {
                       Services
                       </h6>
                       <div className="grid grid-cols-2 gap-4">
-                        <div className="space-y-2">
-                        <h6
-                            className="font-semibold text-sm cursor-pointer text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2"
-                            onClick={onDmsOverviewClick}
-                          >
-                            DMS Overview
-                          </h6>
-                        </div>
-                        <div className="space-y-2">
-                          <h6 className="font-semibold text-sm cursor-pointer text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Inventory Acquisition</h6>
-                        </div>
-                        <div className="space-y-2">
-                          <h6 className="font-semibold text-sm cursor-pointer text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Customer Relations Management (CRM)</h6>
-                        </div>
-                        <div className="space-y-2">
-                          <h6 className="font-semibold text-sm cursor-pointer text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Buy Here Pay Here (BHPH)</h6>
-                        </div>
-                        <div className="space-y-2">
-                          <h6 className="font-semibold text-sm cursor-pointer text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">DealerCenter's Mobile App </h6>
-                        </div>
-                        <div className="space-y-2">
-                          <h6 className="font-semibold text-sm cursor-pointer text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Dealer Websites</h6>
-                        </div>
-                        <div className="space-y-2">
-                          <h6 className="font-semibold text-sm cursor-pointer text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Digital Marketing</h6>
-                        </div>
-                        <div className="space-y-2">
-                          <h6 className="font-semibold text-sm cursor-pointer text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Digital Retailing Solution</h6>
-                        </div>
-                        <div className="space-y-2">
-                          <h6 className="font-semibold text-sm cursor-pointer text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Dashboard & Reporting </h6>
-                        </div>
-                      </div>
+  <div className="space-y-2">
+    <a
+      href="#dms-overview"
+      className="font-semibold text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2"
+    >
+      DMS Overview
+    </a>
+  </div>
+  <div className="space-y-2">
+    <a
+      href="#inventory-acquisition"
+      className="font-semibold text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2"
+    >
+      Inventory Acquisition
+    </a>
+  </div>
+  <div className="space-y-2">
+    <a
+      href="#crm"
+      className="font-semibold text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2"
+    >
+      Customer Relations Management (CRM)
+    </a>
+  </div>
+  <div className="space-y-2">
+    <a
+      href="#bhph"
+      className="font-semibold text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2"
+    >
+      Buy Here Pay Here (BHPH)
+    </a>
+  </div>
+  <div className="space-y-2">
+    <a
+      href="#mobile-app"
+      className="font-semibold text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2"
+    >
+      DealerCenter's Mobile App
+    </a>
+  </div>
+  <div className="space-y-2">
+    <a
+      href="#dealer-websites"
+      className="font-semibold text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2"
+    >
+      Dealer Websites
+    </a>
+  </div>
+  <div className="space-y-2">
+    <a
+      href="#digital-marketing"
+      className="font-semibold text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2"
+    >
+      Digital Marketing
+    </a>
+  </div>
+  <div className="space-y-2">
+    <a
+      href="#digital-retailing"
+      className="font-semibold text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2"
+    >
+      Digital Retailing Solution
+    </a>
+  </div>
+  <div className="space-y-2">
+    <a
+      href="#dashboard-reporting"
+      className="font-semibold text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2"
+    >
+      Dashboard & Reporting
+    </a>
+  </div>
+</div>
+
 
                     </div>
                     <div className='bg-white p-3 rounded-lg'>
@@ -197,7 +249,7 @@ export function Header({onDmsOverviewClick }) {
                     </div>
                   </div>
                 </div>
-
+)}
               </div>
 
               <NavLink href="#features"  className="text-center md:text-left break-words w-auto lg:w-max">Pricing</NavLink>

@@ -32,7 +32,7 @@ export default function Services() {
     
     <Container className="relative ">
 
-        <div className="mx-auto w-full px-4 sm:px-6 lg:px-8 mb-40 bg-gradient-to-r from-gray-100 via-blue-100 to-white py-16 rounded-lg">
+        <div className="mx-auto w-full px-4 sm:px-6 shadow-md lg:px-8 mb-40 bg-gradient-to-r from-gray-100 via-blue-100 to-white py-16 rounded-lg">
   <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
     <div>
       <h2 className="font-display text-3xl tracking-tight text-dark sm:text-4xl">
@@ -56,7 +56,7 @@ export default function Services() {
 
 
 
-  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-40">
+  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-40" id="dms-overview">
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
       <div className="flex justify-center"  data-aos="fade-right">
         <Image
@@ -66,16 +66,16 @@ export default function Services() {
         />
       </div>
       <div>
-        <h2 className="font-display text-3xl tracking-tight text-dark sm:text-4xl" data-aos="fade-up">
+        <h2 className="font-display text-3xl tracking-tight text-dark sm:text-4xl" data-aos="fade-right">
           Dealer Management System (DMS)
         </h2>
-        <p className="mt-4 text-lg tracking-tight text-dark" data-aos="zoom-in">
+        <p className="mt-4 text-lg tracking-tight text-dark" >
           DealerCenter’s fully integrated mobile- and web-based solution gives
           you industry-leading technology that combines all the tools you need
           into a single platform. DealerCenter makes it easier than ever to run
           your business.
         </p>
-        <ul className="mt-6 grid grid-cols-1 md:grid-cols-2 font-bold gap-x-8 gap-y-4 text-dark list-disc marker:text-blue-500" data-aos="zoom-in">
+        <ul className="mt-6 grid grid-cols-1 md:grid-cols-2 pl-8 font-bold gap-x-8 gap-y-4 text-dark list-disc marker:text-blue-500">
           <li>Desking & Deal Management</li>
           <li>Finance & Insurance</li>
           <li>Wholesale, Cash, Retail</li>
@@ -104,16 +104,16 @@ export default function Services() {
       </div>
       
 
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-40">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-40" id="inventory-acquisition">
   <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
     <div>
-      <h2 className="font-display text-3xl tracking-tight text-dark sm:text-4xl" data-aos="fade-up">
+      <h2 className="font-display text-3xl tracking-tight text-dark sm:text-4xl" data-aos="fade-left">
         Inventory Acquisition & Merchandising
       </h2>
-      <p className="mt-4 text-lg tracking-tight text-dark" data-aos="zoom-in">
+      <p className="mt-4 text-lg tracking-tight text-dark" >
         Easily manage everything from shopping auction inventory and assessing book values to 360° photo and video production to showcase your inventory online. Everything you need in a perfectly integrated mobile- and web-based solution.
       </p>
-      <ul className="mt-6 grid grid-cols-1 md:grid-cols-2 font-bold gap-x-8 gap-y-4 text-dark list-disc marker:text-blue-500" data-aos="zoom-in">
+      <ul className="mt-6 grid grid-cols-1 md:grid-cols-2 font-bold gap-x-8 gap-y-4 text-dark list-disc marker:text-blue-500" >
         <li>Auction Run List</li>
         <li>Automatic VIN Decoding</li>
         <li>Vehicle Booking Services</li>
@@ -138,7 +138,7 @@ export default function Services() {
               </Button>
             </div>
     </div>
-    <div className="flex justify-center"  data-aos="fade-right">
+    <div className="flex justify-center"  data-aos="fade-left">
       <Image
         src={inventory}
         alt="DMS Software"
@@ -148,7 +148,7 @@ export default function Services() {
   </div>
       </div>
       
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-40">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-40" id="crm">
   <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
     <div className="flex justify-center"  data-aos="fade-right">
       <Image
@@ -158,13 +158,13 @@ export default function Services() {
       />
     </div>
     <div>
-      <h2 className="font-display text-3xl tracking-tight text-dark sm:text-4xl" data-aos="fade-up">
+      <h2 className="font-display text-3xl tracking-tight text-dark sm:text-4xl" data-aos="fade-right">
         Customer Relations Management (CRM)
       </h2>
-      <p className="mt-4 text-lg tracking-tight text-dark" data-aos="zoom-in">
+      <p className="mt-4 text-lg tracking-tight text-dark" >
         The DealerCenter CRM suite puts you in command of all your customer activity and your internet lead management process. With automation, alerts, and built-in communications with SMS, email, phone, and video fully integrated, you have everything you need to manage the customer experience at your dealership.
       </p>
-      <ul className="mt-6 grid grid-cols-1 md:grid-cols-2 font-bold gap-x-8 gap-y-4 text-dark list-disc marker:text-blue-500" data-aos="zoom-in">
+      <ul className="mt-6 grid grid-cols-1 md:grid-cols-2 pl-8 font-bold gap-x-8 gap-y-4 text-dark list-disc marker:text-blue-500" >
         <li>Lead Integration from 3rd Party Listings</li>
         <li>Duplicate Lead Detection & Management</li>
         <li>Custom Sales Rep Lead Assignment</li>
@@ -192,16 +192,16 @@ export default function Services() {
 </div>
 
       
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-40">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-40" id="bhph">
   <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
     <div>
-      <h2 className="font-display text-3xl tracking-tight text-dark sm:text-4xl" data-aos="fade-up">
+      <h2 className="font-display text-3xl tracking-tight text-dark sm:text-4xl" data-aos="fade-left">
         Buy Here Pay Here (BHPH)
       </h2>
-      <p className="mt-4 text-lg tracking-tight text-dark" data-aos="zoom-in">
+      <p className="mt-4 text-lg tracking-tight text-dark" >
         DealerCenter’s BHPH module is equipped with the collections, reporting, and account management tools to ensure the health and continued growth of your BHPH portfolio.
       </p>
-      <ul className="mt-6 grid grid-cols-1 md:grid-cols-2 font-bold gap-x-8 gap-y-4 text-dark list-disc marker:text-blue-500" data-aos="zoom-in">
+      <ul className="mt-6 grid grid-cols-1 md:grid-cols-2 font-bold gap-x-8 gap-y-4 text-dark list-disc marker:text-blue-500">
         <li>Portfolio Management</li>
         <li>Collections & Workflow Management</li>
         <li>Credit Card and ACH Processing</li>
@@ -221,7 +221,7 @@ export default function Services() {
               </Button>
             </div>
           </div>
-          <div className="flex justify-center"  data-aos="fade-right">
+          <div className="flex justify-center"  data-aos="fade-left">
       <Image
         src={BHPH}
         alt="BHPH Module"
@@ -232,7 +232,7 @@ export default function Services() {
 </div>
 
 
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-40">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-40" id="mobile-app">
   <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
     <div className="flex justify-center"  data-aos="fade-right">
       <Image
@@ -242,13 +242,13 @@ export default function Services() {
       />
     </div>
     <div>
-      <h2 className="font-display text-3xl tracking-tight text-dark sm:text-4xl" data-aos="fade-up">
+      <h2 className="font-display text-3xl tracking-tight text-dark sm:text-4xl" data-aos="fade-right">
         DealerCenter’s Mobile App
       </h2>
-      <p className="mt-4 text-lg tracking-tight text-dark" data-aos="zoom-in">
+      <p className="mt-4 text-lg tracking-tight text-dark" >
         DealerCenter’s Mobile App lets you oversee your deals, upload inventory, run vehicle history reports, communicate with customers, and more—all from your phone.
       </p>
-      <ul className="mt-6 grid grid-cols-1 md:grid-cols-2 font-bold gap-x-8 gap-y-4 text-dark list-disc marker:text-blue-500" data-aos="zoom-in">
+      <ul className="mt-6 grid grid-cols-1 md:grid-cols-2 font-bold pl-8 gap-x-8 gap-y-4 text-dark list-disc marker:text-blue-500" >
         <li>VIN Scan</li>
         <li>Full Inventory Merchandizing</li>
         <li>Auction Run Lists</li>
@@ -273,16 +273,16 @@ export default function Services() {
 </div>
 
 
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-40">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-40" id="dealer-websites">
   <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
     <div>
-      <h2 className="font-display text-3xl tracking-tight text-dark sm:text-4xl" data-aos="fade-up">
+      <h2 className="font-display text-3xl tracking-tight text-dark sm:text-4xl" data-aos="fade-left">
         Dealer Websites
       </h2>
-      <p className="mt-4 text-lg tracking-tight text-dark" data-aos="zoom-in">
+      <p className="mt-4 text-lg tracking-tight text-dark" >
         DealerCenter’s websites are designed with mobile users in mind, ensuring your site dynamically fits any screen size. Free custom design and setup, auto-sync inventory using DealerCenter’s mobile app, and always secure with SSL Certificate.
       </p>
-      <ul className="mt-6 grid grid-cols-1 md:grid-cols-2 font-bold gap-x-8 gap-y-4 text-dark list-disc marker:text-blue-500" data-aos="zoom-in">
+      <ul className="mt-6 grid grid-cols-1 md:grid-cols-2 font-bold gap-x-8 gap-y-4 text-dark list-disc marker:text-blue-500" >
         <li>Custom Responsive Websites</li>
         <li>Designed with Mobile Users in mind first</li>
         <li>Over 40 Design Themes to choose from</li>
@@ -305,7 +305,7 @@ export default function Services() {
               </Button>
             </div>
           </div>
-          <div className="flex justify-center"  data-aos="fade-right">
+          <div className="flex justify-center"  data-aos="fade-left">
       <Image
         src={website}
         alt="Dealer Websites"
@@ -316,7 +316,7 @@ export default function Services() {
 </div>
 
       
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-40">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-40" id="digital-marketing">
   <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
     <div className="flex justify-center "  data-aos="fade-right">
       <Image
@@ -326,13 +326,13 @@ export default function Services() {
       />
     </div>
     <div>
-      <h2 className="font-display text-3xl tracking-tight text-dark sm:text-4xl" data-aos="fade-up">
+      <h2 className="font-display text-3xl tracking-tight text-dark sm:text-4xl" data-aos="fade-right">
         Digital Marketing
       </h2>
-      <p className="mt-4 text-lg tracking-tight text-dark" data-aos="zoom-in">
+      <p className="mt-4 text-lg tracking-tight text-dark" >
         Maximize exposure and generate more leads with our automated classified listing posting, On-Site SEO, and SEM/PPC advertising services.
       </p>
-      <ul className="mt-6 grid grid-cols-1 md:grid-cols-2 font-bold gap-x-8 gap-y-4 text-dark list-disc marker:text-blue-500" data-aos="zoom-in">
+      <ul className="mt-6 grid grid-cols-1 pl-8 md:grid-cols-2 font-bold gap-x-8 gap-y-4 text-dark list-disc marker:text-blue-500" >
         <li>Automated Classified Listings</li>
         <li>Technical On-Site SEO</li>
         <li>SEM / PPC Ad Management</li>
@@ -355,17 +355,17 @@ export default function Services() {
 
       
 
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-40">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-40" id="digital-retailing">
   <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
    
     <div>
-      <h2 className="font-display text-3xl tracking-tight text-dark sm:text-4xl" data-aos="fade-up">
+      <h2 className="font-display text-3xl tracking-tight text-dark sm:text-4xl" data-aos="fade-left">
         Digital Retailing Solution
       </h2>
-      <p className="mt-4 text-lg tracking-tight text-dark" data-aos="zoom-in">
+      <p className="mt-4 text-lg tracking-tight text-dark" >
         DealerCenter’s Digital Retailing Solution helps you create an online shopping experience customers expect today. This creates a more engaged shopper to help increase your incoming leads.
       </p>
-      <ul className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-x-8 font-bold gap-y-4 text-dark list-disc marker:text-blue-500" data-aos="zoom-in">
+      <ul className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-x-8 font-bold gap-y-4 text-dark list-disc marker:text-blue-500" >
         <li>Engage & Convert Online Shoppers</li>
         <li>Allow Customers to Personalize their Monthly Payment</li>
         <li>Prequalify your customer without affecting their credit</li>
@@ -382,7 +382,7 @@ export default function Services() {
               </Button>
             </div>
           </div>
-           <div className="flex justify-center"  data-aos="fade-right">
+           <div className="flex justify-center"  data-aos="fade-left">
       <Image
         src={retail}
         alt="DMS Software"
@@ -394,7 +394,7 @@ export default function Services() {
 
       
 
-       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-40">
+       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-40" id="dashboard-reporting">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div
           className="flex justify-center"
@@ -403,17 +403,17 @@ export default function Services() {
           <Image
             src={report}
             alt="DMS Software"
-            className="rounded-lg shadow-lg w-full max-w-md md:max-w-full transform transition-transform duration-300 ease-in-out hover:scale-105" // Hover scale
+            className="rounded-lg shadow-lg w-full max-w-md md:max-w-full transform transition-transform duration-300 ease-in-out hover:scale-105" 
           />
         </div>
         <div>
-          <h2 className="font-display text-3xl tracking-tight text-dark sm:text-4xl" data-aos="fade-up">
+          <h2 className="font-display text-3xl tracking-tight text-dark sm:text-4xl" data-aos="fade-right">
             Dashboard & Reporting
           </h2>
-          <p className="mt-4 text-lg tracking-tight text-dark" data-aos="zoom-in">
+          <p className="mt-4 text-lg tracking-tight text-dark" >
             DealerCenter helps you harness the power of your data to optimize the operation of your dealership. Analyze customer data and marketing spending to quickly see a return on investment (ROI) from your advertisement budget. Easily create custom dashboards and reports to know every aspect of the performance of your dealership.
           </p>
-          <ul className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-x-8 font-bold gap-y-4 text-dark list-disc marker:text-blue-500" data-aos="zoom-in">
+          <ul className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-x-8 pl-8 font-bold gap-y-4 text-dark list-disc marker:text-blue-500" >
             <li>Pre-built Reports to Manage your Dealership</li>
             <li>Dashboards for a quick view of your business</li>
             <li>Customize your Own Reports & Dashboard</li>
