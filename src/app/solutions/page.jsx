@@ -33,7 +33,7 @@ export default function Services() {
     
     <Container className="relative ">
 
-        <div className="mx-auto w-full px-4 sm:px-6 shadow-md lg:px-8 mb-40 bg-gradient-to-r from-gray-100 via-blue-100 to-white py-16 rounded-lg">
+        <div className="mx-auto w-full px-4 sm:px-6 shadow-md  lg:px-8 mb-40 mt-10 bg-gradient-to-r from-gray-100 via-blue-100 to-white py-16 rounded-lg">
   <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
     <div>
       <h2 className="font-display text-3xl tracking-tight text-dark sm:text-4xl">

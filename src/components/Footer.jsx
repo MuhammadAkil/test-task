@@ -19,7 +19,7 @@ export function Footer() {
     <div>
       <h3 className="font-semibold mb-4">Solutions</h3>
       <ul className="space-y-2">
-        <li><NavLink href="#dealership-website">Dealership Website</NavLink></li>
+        <li><NavLink href="#dealer-websites">Dealership Website</NavLink></li>
         <li><NavLink href="#digital-marketing">Digital Marketing</NavLink></li>
         <li><NavLink href="#advertising">Automotive Advertising</NavLink></li>
         <li><NavLink href="#partners">Partners</NavLink></li>

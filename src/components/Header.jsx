@@ -106,7 +106,7 @@ export function Header({ onDmsOverviewClick }) {
     setIsSolutionsOpen(prevState => !prevState); 
   };
   return (
-    <header className="py-4">
+    <header className="py-4 shadow-md">
       <Container>
         <nav className="relative z-50 flex justify-between">
           <div className="flex items-center md:gap-x-12">
@@ -115,12 +115,15 @@ export function Header({ onDmsOverviewClick }) {
             </Link>
             <div className="hidden md:flex md:flex-wrap md:gap-3 lg:gap-x-4 relative">
               <div className="group">
-                <div className="flex items-center cursor-pointer" onClick={handleSolutionsClick}>
-                  <NavLink href="solutions">
-                    Solutions
-                  </NavLink>
-                  <FaChevronDown className={`ml-2 transition-transform ${isSolutionsOpen ? 'transform rotate-180' : ''}`} />
-                </div>
+             <div
+  className={`flex items-center cursor-pointer  px-2 rounded-lg`}
+  onClick={handleSolutionsClick}
+>
+  <NavLink href="/solutions" className="flex items-center text-gray-800">
+    <span>Solutions</span>
+    <FaChevronDown className={`ml-1 transition-transform ${isSolutionsOpen ? 'rotate-180' : ''}`} />
+  </NavLink>
+</div>
 
                 {/* Dropdown Menu */}
                 {isSolutionsOpen && (
