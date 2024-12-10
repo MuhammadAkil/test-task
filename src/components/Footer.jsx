@@ -6,7 +6,7 @@ import { FaFacebook, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa';
 
 export function Footer() {
   return (
-    <footer className="bg-white text-gray-700">
+    <footer className="bg-white text-gray-700" id='footer'>
       <Container>
         {/* Top Section with Logo and Links */}
         <div className="py-10 border-b border-gray-300">

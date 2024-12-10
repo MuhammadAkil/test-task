@@ -252,9 +252,9 @@ export function Header({ onDmsOverviewClick }) {
 )}
               </div>
 
-              <NavLink href="#features"  className="text-center md:text-left break-words w-auto lg:w-max">Pricing</NavLink>
-              <NavLink href="#testimonials"  className="text-center md:text-left break-words w-auto lg:w-max" >Chat with us</NavLink>
-              <NavLink href="#pricing"  className="text-center md:text-left break-words w-auto lg:w-max">About Us</NavLink>
+              <NavLink href="#pricing"  className="text-center md:text-left break-words w-auto lg:w-max">Pricing</NavLink>
+              <NavLink href="#footer"  className="text-center md:text-left break-words w-auto lg:w-max" >Chat with us</NavLink>
+              <NavLink href="#faq"  className="text-center md:text-left break-words w-auto lg:w-max">About Us</NavLink>
             </div>
 
           </div>
