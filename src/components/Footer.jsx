@@ -1,58 +1,87 @@
 import Link from 'next/link'
-
 import { Container } from '@/components/Container'
 import { Logo } from '@/components/Logo'
 import { NavLink } from '@/components/NavLink'
+import { FaFacebook, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa';
 
 export function Footer() {
   return (
-    <footer className="bg-slate-50">
+    <footer className="bg-white text-gray-700">
       <Container>
-        <div className="py-16">
-          <Logo className="mx-auto h-10 w-auto" />
-          <nav className="mt-10 text-sm" aria-label="quick links">
-            <div className="-my-1 flex justify-center gap-x-6">
-              <NavLink href="#solutions">Solutions</NavLink>
-              <NavLink href="#resources">Resources</NavLink>
-              <NavLink href="#about-us">About Us</NavLink>
-              <NavLink href="#contact">Contact</NavLink>
-              <NavLink href="#customer-support">Customer Support</NavLink>
+        {/* Top Section with Logo and Links */}
+        <div className="py-10 border-b border-gray-300">
+          <Logo className="h-10 mx-auto mb-8" />
+          <div className="grid grid-cols-5 md:grid-cols-5 gap-6 text-sm">
+            {/* Solutions */}
+            <div>
+              <h3 className="font-semibold mb-4">Solutions</h3>
+              <ul className="space-y-2">
+                <li><NavLink href="#dealership-website">Dealership Website</NavLink></li>
+                <li><NavLink href="#digital-marketing">Digital Marketing</NavLink></li>
+                <li><NavLink href="#advertising">Automotive Advertising</NavLink></li>
+                <li><NavLink href="#partners">Partners</NavLink></li>
+              </ul>
             </div>
-          </nav>
+            {/* Resources */}
+            <div>
+              <h3 className="font-semibold mb-4">Resources</h3>
+              <ul className="space-y-2">
+                <li><NavLink href="#library">Resource Library</NavLink></li>
+                <li><NavLink href="#client-resources">Client Resources</NavLink></li>
+              </ul>
+            </div>
+            {/* About Us */}
+            <div>
+              <h3 className="font-semibold mb-4">About Us</h3>
+              <ul className="space-y-2">
+                <li><NavLink href="#news">News</NavLink></li>
+                <li><NavLink href="#contact">Contact Us</NavLink></li>
+                <li><NavLink href="#team">Meet Our Team</NavLink></li>
+              </ul>
+            </div>
+            {/* Success Stories */}
+            <div>
+              <h3 className="font-semibold mb-4">Success Stories</h3>
+              <ul className="space-y-2">
+                <li><NavLink href="#contact-support">Contact</NavLink></li>
+                <li><NavLink href="#support">Support</NavLink></li>
+                <li><NavLink href="#help-center">Help Center</NavLink></li>
+              </ul>
+            </div>
+           {/* Partners */}
+{/* Partners */}
+<div className="flex flex-col items-center space-y-4">
+  <FaFacebook className="w-24 text-xl" />
+  <FaLinkedin className="w-24 text-xl" />
+  <FaTwitter className="w-24 text-xl" />
+  <FaYoutube className="w-24 text-xl" />
+</div>
+
+
+          </div>
         </div>
-        <div className="flex flex-col items-center border-t border-slate-400/10 py-10 sm:flex-row-reverse sm:justify-between">
-          <div className="flex gap-x-6">
-            <Link href="#" className="group" aria-label="TaxPal on Facebook">
-              <svg
-                className="h-6 w-6 fill-slate-500 group-hover:fill-slate-700"
-                aria-hidden="true"
-                viewBox="0 0 24 24"
-              >
-                <path d="M13.3174 10.7749L19.1457 4H17.7646L12.7039 9.88256L8.66193 4H4L10.1122 12.8955L4 20H5.38119L10.7254 13.7878L14.994 20H19.656L13.3171 10.7749H13.3174ZM11.4257 12.9738L10.8064 12.0881L5.87886 5.03974H8.00029L11.9769 10.728L12.5962 11.6137L17.7652 19.0075H15.6438L11.4257 12.9742V12.9738Z" />
+
+        {/* Bottom Section */}
+        <div className="flex flex-col items-center py-6 md:flex-row md:justify-between">
+          <div className="flex space-x-6">
+            <Link href="#" className="group" aria-label="Facebook">
+              <svg className="h-6 w-6 fill-gray-500 hover:fill-gray-700" viewBox="0 0 24 24">
+                <path d="M..."></path>
               </svg>
             </Link>
-            <Link href="#" className="group" aria-label="TaxPal on Twitter">
-              <svg
-                className="h-6 w-6 fill-slate-500 group-hover:fill-slate-700"
-                aria-hidden="true"
-                viewBox="0 0 24 24"
-              >
-                <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2Z" />
+            <Link href="#" className="group" aria-label="Twitter">
+              <svg className="h-6 w-6 fill-gray-500 hover:fill-gray-700" viewBox="0 0 24 24">
+                <path d="M..."></path>
               </svg>
             </Link>
-            <Link href="#" className="group" aria-label="TaxPal on LinkedIn">
-              <svg
-                className="h-6 w-6 fill-slate-500 group-hover:fill-slate-700"
-                aria-hidden="true"
-                viewBox="0 0 24 24"
-              >
-                <path d="M19 0H5C3.895 0 3 .895 3 2v20c0 1.105.895 2 2 2h14c1.105 0 2-.895 2-2V2c0-1.105-.895-2-2-2zM9.5 19h-2v-6h2v6zm-1-7.062c-.695 0-1.25-.567-1.25-1.25 0-.695.567-1.25 1.25-1.25.695 0 1.25.567 1.25 1.25 0 .695-.567 1.25-1.25 1.25zm7.5 7.062h-2v-3.25c0-.797-.629-1.436-1.406-1.436-.777 0-1.344.636-1.344 1.336v3.35h-2v-6h2v.75c.211-.338.518-.608.91-.79-.625-.938-1.406-1.544-2.396-1.544-1.5 0-2.704 1.198-2.704 2.687v5.094h-2V10h2v-.75c.064-.131.179-.233.324-.335C16.191 7.726 18 8.667 18 10.25v8.75z" />
+            <Link href="#" className="group" aria-label="LinkedIn">
+              <svg className="h-6 w-6 fill-gray-500 hover:fill-gray-700" viewBox="0 0 24 24">
+                <path d="M..."></path>
               </svg>
             </Link>
           </div>
-          <p className="mt-6 text-sm text-slate-500 sm:mt-0">
-            Copyright &copy; {new Date().getFullYear()} TaxPal. All rights
-            reserved.
+          <p className="mt-6 text-xs text-gray-500 md:mt-0">
+            &copy; {new Date().getFullYear()} Dealer.com. All rights reserved.
           </p>
         </div>
       </Container>
