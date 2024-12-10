@@ -10,12 +10,13 @@ import screenshotContacts from '@/images/screenshots/contacts.png'
 import screenshotInventory from '@/images/screenshots/inventory.png'
 import screenshotProfitLoss from '@/images/screenshots/profit-loss.png'
 
+
 const features = [
   {
-    name: 'Reporting',
-    summary: 'Stay on top of things with always up-to-date reporting features.',
+    name: 'Real-Time Reporting',
+    summary: 'Gain insights into dealership performance with dynamic reporting tools.',
     description:
-      'Our reporting feature helps you track the financial status of your business in real-time. With custom reports and intuitive charts, you’ll never be out of the loop.',
+      'Our real-time reporting feature provides you with a clear overview of your dealership’s performance. Access detailed sales reports, track customer trends, and monitor key metrics effortlessly with customizable dashboards.',
     image: screenshotProfitLoss,
     icon: function ReportingIcon() {
       let id = useId()
@@ -46,11 +47,10 @@ const features = [
     },
   },
   {
-    name: 'Inventory Management',
-    summary:
-      'Keep track of your stock levels and streamline inventory management.',
+    name: 'Dealer Inventory Management',
+    summary: 'Optimize inventory handling and keep track of all your vehicles.',
     description:
-      'Easily manage your product inventory and keep an accurate record of items. Stay informed with real-time inventory levels and receive alerts when stock is low.',
+      'Easily manage vehicle inventory, track in-stock and sold vehicles, and set alerts for restocking popular models. With DealerTrack’s intuitive interface, inventory management becomes a hassle-free experience.',
     image: screenshotInventory,
     icon: function InventoryIcon() {
       return (
@@ -62,7 +62,7 @@ const features = [
           />
           <path
             opacity=".3"
-            d="M8 24a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z"
+            d="M8 24a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 1-1v-2Z"
             fill="#fff"
           />
           <path
@@ -74,11 +74,10 @@ const features = [
     },
   },
   {
-    name: 'Contact Management',
-    summary:
-      'Manage your service providers, clients, and important contacts all in one place.',
+    name: 'Customer Relationship Management (CRM)',
+    summary: 'Build stronger relationships with customers and track interactions.',
     description:
-      'Keep all your contacts organized, whether it’s clients, suppliers, or team members. Our contact management tool allows you to add detailed information and easily find the right contact when you need it.',
+      'DealerTrack’s CRM feature lets you manage customer information, track communications, and schedule follow-ups. Strengthen your customer relationships and ensure no opportunity is missed.',
     image: screenshotContacts,
     icon: function ContactsIcon() {
       return (
@@ -97,6 +96,7 @@ const features = [
     },
   },
 ]
+
 
 function Feature({ feature, isActive, className, ...props }) {
   return (

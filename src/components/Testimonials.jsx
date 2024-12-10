@@ -11,7 +11,7 @@ const testimonials = [
   [
     {
       content:
-        'TaxPal is so easy to use I can’t help but wonder if it’s really doing the things the government expects me to do.',
+        'DealerTrack’s platform has streamlined our dealership operations. Inventory management and financing have never been this seamless.',
       author: {
         name: 'Sheryl Berge',
         role: 'CEO at Lynch LLC',
@@ -20,7 +20,7 @@ const testimonials = [
     },
     {
       content:
-        'I’m trying to get a hold of someone in support, I’m in a lot of trouble right now and they are saying it has something to do with my books. Please get back to me right away.',
+        'Switching to DealerTrack was the best decision we made this year. The customer experience tools are phenomenal!',
       author: {
         name: 'Amy Hahn',
         role: 'Director at Velocity Industries',
@@ -31,7 +31,7 @@ const testimonials = [
   [
     {
       content:
-        'The best part about TaxPal is every time I pay my employees, my bank balance doesn’t go down like it used to. Looking forward to spending this extra cash when I figure out why my card is being declined.',
+        'DealerTrack’s financing tools have helped us close deals faster and improve customer satisfaction. It’s been a game changer for us.',
       author: {
         name: 'Leland Kiehn',
         role: 'Founder of Kiehn and Sons',
@@ -40,7 +40,7 @@ const testimonials = [
     },
     {
       content:
-        'There are so many things I had to do with my old software that I just don’t do at all with TaxPal. Suspicious but I can’t say I don’t love it.',
+        'With DealerTrack’s analytics, we’ve gained deeper insights into our sales trends and customer preferences. Highly recommend it!',
       author: {
         name: 'Erin Powlowski',
         role: 'COO at Armstrong Inc',
@@ -51,7 +51,7 @@ const testimonials = [
   [
     {
       content:
-        'I used to have to remit tax to the EU and with TaxPal I somehow don’t have to do that anymore. Nervous to travel there now though.',
+        'DealerTrack’s inventory management system is intuitive and saves us hours every week. Our team loves using it!',
       author: {
         name: 'Peter Renolds',
         role: 'Founder of West Inc',
@@ -60,7 +60,7 @@ const testimonials = [
     },
     {
       content:
-        'This is the fourth email I’ve sent to your support team. I am literally being held in jail for tax fraud. Please answer your damn emails, this is important.',
+        'The seamless integration of DealerTrack into our existing workflows has significantly improved our efficiency. Support has been fantastic too!',
       author: {
         name: 'Amy Hahn',
         role: 'Director at Velocity Industries',
@@ -69,6 +69,7 @@ const testimonials = [
     },
   ],
 ]
+
 
 function QuoteIcon(props) {
   return (

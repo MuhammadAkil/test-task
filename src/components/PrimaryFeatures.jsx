@@ -14,30 +14,31 @@ import screenshotVatReturns from '@/images/screenshots/vat-returns.png'
 
 const features = [
   {
-    title: 'Payroll',
+    title: 'Payroll Management',
     description:
-      "Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.",
+      "Streamline payroll processing for your dealership. Manage employee salaries and keep records organized with ease. Direct deposit support coming soon!",
     image: screenshotPayroll,
   },
   {
-    title: 'Claim expenses',
+    title: 'Expense Tracking',
     description:
-      "All of your receipts organized into one place, as long as you don't mind typing in the data by hand.",
+      "Keep dealership expenses in check by organizing receipts and tracking costs efficiently. Input expenses manually or integrate with accounting tools for better control.",
     image: screenshotExpenses,
   },
   {
-    title: 'VAT handling',
+    title: 'Tax Management',
     description:
-      "We only sell our software to companies who don't deal with VAT at all, so technically we do all the VAT stuff they need.",
+      "Simplify tax processes with DealerTrack. Easily manage tax calculations and reporting for your dealership's operations, ensuring compliance without the hassle.",
     image: screenshotVatReturns,
   },
   {
-    title: 'Reporting',
+    title: 'Advanced Reporting',
     description:
-      'Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it.',
+      'Gain deep insights into your dealership’s performance. Export data, analyze trends, and make informed decisions with detailed and customizable reports.',
     image: screenshotReporting,
   },
 ]
+
 
 export function PrimaryFeatures() {
   let [tabOrientation, setTabOrientation] = useState('horizontal')
