@@ -101,16 +101,9 @@ export function Header() {
   const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
 
   const handleSolutionsClick = () => {
-    setIsSolutionsOpen((prevState) => !prevState);
+    setIsSolutionsOpen((prev) => !prev);
   };
 
-  const handleMouseEnter = () => {
-    setIsSolutionsOpen(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsSolutionsOpen(false);
-  };
 
   return (
     <header className="py-4 shadow-md">
@@ -121,10 +114,7 @@ export function Header() {
               <Logo className="h-10 w-auto"  />
             </Link>
             <div className="hidden md:flex md:flex-wrap md:gap-3 lg:gap-x-4 relative">
-              <div className="group"
-              onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
->
+              <div className="group">
                 <div
                   className={`flex items-center cursor-pointer  px-2 rounded-lg`}
                   onClick={handleSolutionsClick}
@@ -134,12 +124,9 @@ export function Header() {
                     <FaChevronDown className={`ml-1 transition-transform ${isSolutionsOpen ? 'rotate-180' : ''}`} />
                   </NavLink>
                 </div>
-
-                {/* Dropdown Menu */}
                 {isSolutionsOpen && (
                   <div className="absolute  left-3/4 transform -translate-x-1/4 hidden group-hover:flex p-4 shadow-lg space-x-6 bg-[#e6e8f0] rounded-lg"
-                  onMouseEnter={handleMouseEnter}
-                  onMouseLeave={handleMouseLeave}
+          
 >
                     <div className="flex space-x-6">
                       <div className='bg-white p-3 rounded-lg'>
