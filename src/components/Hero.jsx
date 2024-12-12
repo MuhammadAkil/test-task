@@ -10,6 +10,7 @@ import logoStatamic from '@/images/logos/statamic.svg'
 import logoStaticKit from '@/images/logos/statickit.svg'
 import logoTransistor from '@/images/logos/transistor.svg'
 import logoTuple from '@/images/logos/tuple.svg'
+import powerup from '@/images/powerup.webp';
 
   const logos = [
     { name: 'Transistor', logo: logoTransistor },
@@ -76,7 +77,10 @@ export function Hero() {
           ))}
         </div>
       </div>
-    </div>
+      </div>
+      
+
+       
     </Container>
   )
 }
