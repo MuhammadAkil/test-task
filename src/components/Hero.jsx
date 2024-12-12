@@ -54,21 +54,15 @@ export function Hero() {
         Most bookkeeping software is accurate, but hard to use. We make the
         opposite trade-off, and hope you don’t get audited.
       </p>
-      <div className="mt-10 flex justify-center gap-x-6">
-        <Button href="/register">Get Started Today</Button>
-        <Button
-          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-          variant="outline"
-        >
-          <svg
-            aria-hidden="true"
-            className="h-3 w-3 flex-none fill-blue-600 group-active:fill-current"
-          >
-            <path d="m9.997 6.91-7.583 3.447A1 1 0 0 1 1 9.447V2.553a1 1 0 0 1 1.414-.91L9.997 5.09c.782.355.782 1.465 0 1.82Z" />
-          </svg>
-          <span className="ml-3">Watch video</span>
-        </Button>
-      </div>
+    <div className="mt-10 flex justify-center gap-x-6 animate-fade-in">
+  <Button 
+    href="/register" 
+    className="transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
+  >
+    Get Started Today
+  </Button>
+</div>
+
       <div className="mt-26 lg:mt-44">
       <p className="font-display mb-10 text-lg text-slate-900">
         Trusted by these companies so far
