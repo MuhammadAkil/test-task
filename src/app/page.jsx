@@ -9,7 +9,7 @@ import { Testimonials } from '@/components/Testimonials'
 import { Hero } from '@/components/Hero';
 import WhyUs from '@/components/Whyus';
 import Powerup from '@/components/Powerup';
-
+import About from '@/components/About';
 
 export default function Home() {
 
@@ -27,8 +27,9 @@ export default function Home() {
       <Hero />
       <PrimaryFeatures />
       <Powerup />
-        <SecondaryFeatures />
-        <WhyUs />
+        
+      <WhyUs />
+      <About />
         <Testimonials />
         <Pricing />
         <Faqs />
