@@ -102,7 +102,6 @@ export function Header() {
     setIsSolutionsOpen((prev) => !prev);
   };
 
-
   return (
     <header className="py-4 shadow-md">
       <Container>
