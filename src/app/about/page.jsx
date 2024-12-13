@@ -23,7 +23,7 @@ function LightStepA() {
     />
   </div>
   <div className="lg:w-1/2 md:w-1/2 md:pl-10 md:py-6">
-   <p className="mt-4 pb-10 text-sm tracking-tight text-gray-700">
+   <p className="mt-4 pb-10 text-lg tracking-tight text-gray-700">
   Dealer Track is a comprehensive dealership management software designed to streamline and automate the day-to-day operations of automotive dealerships. It offers an integrated suite of tools for inventory control, sales tracking, customer service, finance, and more.
 
   With Dealer Track, dealers can efficiently manage their vehicle inventory, ensuring real-time updates for listings, availability, and pricing. The software simplifies sales processes, tracks leads, manages transactions, and facilitates smooth deal closures. Finance management tools automate payment processing, invoicing, and accounting, reducing manual errors.
@@ -36,7 +36,7 @@ function LightStepA() {
   </div>
         </div>
         
-          <div className="flex mt-10 flex-wrap w-full">
+          <div className="flex mt-20 flex-wrap w-full">
   <div className="w-full flex justify-center mb-10">
     <Image
       src={assist}
@@ -52,7 +52,7 @@ function LightStepA() {
   </div>
 
   <div className="w-full text-center px-5">
-    <p className=" mx-auto max-w-3xl pb-10 text-sm tracking-tight text-gray-700">
+    <p className=" mx-auto max-w-3xl pb-10 text-lg tracking-tight text-gray-700">
       At Dealer Track, our mission is to empower automotive dealerships with innovative, cutting-edge software solutions designed to enhance operational efficiency, improve customer satisfaction, and foster sustainable growth. We are committed to equipping dealerships with the tools they need to thrive in an increasingly competitive and rapidly evolving automotive industry. By automating everyday tasks, streamlining processes, and integrating data seamlessly across all departments, we help dealerships reduce manual workload, minimize errors, and ensure smoother operations. Our solutions are designed to enhance the overall customer experience, enabling dealerships to offer personalized service, faster transactions, and better communication at every stage of the sales process. With Dealer Track, dealerships are not only able to improve their bottom line but also build long-lasting customer relationships, optimize inventory management, and make data-driven decisions to stay ahead of industry trends. We are dedicated to the success of our partners and work tirelessly to help them adapt, grow, and lead in the ever-changing world of automotive sales and services.
     </p>
   </div>
@@ -67,7 +67,7 @@ function LightStepA() {
                <h2 className="font-display text-4xl sm:text-5xl text-center pb-16 tracking-tight text-black sm:text-6xl ">
       Our Values
     </h2>
-     <ul className="list-disc list-inside text-gray-700 space-y-4  mx-auto max-w-3xl pb-10 text-sm tracking-tight ">
+     <ul className="list-disc list-inside text-gray-700 space-y-4  mx-auto max-w-3xl pb-10 text-lg tracking-tight ">
   <li>
     <strong>Innovation:</strong> We continuously improve our software solutions to keep pace with the automotive industry's changes, integrating the latest technologies to help dealerships stay ahead with AI-driven analytics and automation.
   </li>
