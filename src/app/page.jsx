@@ -9,8 +9,8 @@ import { Testimonials } from '@/components/Testimonials'
 import { Hero } from '@/components/Hero';
 import WhyUs from '@/components/Whyus';
 import Powerup from '@/components/Powerup';
-import About from '@/components/About';
 import Modules from '@/components/Modules';
+import Scroll from '@/components/Scroll';
 export default function Home() {
 
   const callToActionRef = useRef(null);
@@ -27,12 +27,13 @@ export default function Home() {
       <Hero />
       <Modules />
       <PrimaryFeatures />
-      <About />
       <WhyUs />
       <Powerup /> 
         <Testimonials />
         <Pricing />
-        <Faqs />
+      <Faqs />
+      {/* <Scroll /> */}
+     
     </>
   )
 }

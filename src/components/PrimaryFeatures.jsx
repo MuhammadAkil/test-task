@@ -7,35 +7,35 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background-features.jpg'
-import screenshotExpenses from '@/images/screenshots/expenses.png'
-import screenshotPayroll from '@/images/screenshots/payroll.png'
-import screenshotReporting from '@/images/screenshots/reporting.png'
-import screenshotVatReturns from '@/images/screenshots/vat-returns.png'
+import invt from '@/images/inventory.png'
+import sales from '@/images/salest.webp'
+import finan from '@/images/insure.jpg'
+import rep from '@/images/rtp.avif'
 
 const features = [
   {
     title: 'Inventory Management',
    description:
       "Efficiently manage your vehicle inventory. Track available cars, update stock levels, and monitor vehicle details to streamline sales processes. Integration with supplier systems for automatic inventory updates is coming soon!",
-    image: screenshotPayroll,
+    image: invt,
   },
   {
     title: 'Sales Tracking',
     description:
         "Track all sales activities in real-time. Manage customer data, record sales transactions, and generate sales reports to analyze performance and boost revenue.",
-    image: screenshotExpenses,
+    image: sales,
   },
   {
     title: 'Finance & Insurance (F&I) Management',
     description:
       "Simplify the financing process for your customers. Manage loan approvals, insurance applications, and extended warranties efficiently to provide a seamless car-buying experience.",
-    image: screenshotVatReturns,
+    image: finan,
   },
   {
     title: 'Advanced Reporting',
     description:
       "Gain valuable insights into your dealership’s operations. Analyze sales, expenses, and service data to make informed decisions with customizable and detailed reports.",
-    image: screenshotReporting,
+    image: rep,
   },
 ]
 

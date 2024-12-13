@@ -1,40 +1,9 @@
 import Image from 'next/image'
-
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import Typed from 'react-typed'
-
-import logoLaravel from '@/images/logos/laravel.svg'
-import logoMirage from '@/images/logos/mirage.svg'
-import logoStatamic from '@/images/logos/statamic.svg'
-import logoStaticKit from '@/images/logos/statickit.svg'
-import logoTransistor from '@/images/logos/transistor.svg'
-import logoTuple from '@/images/logos/tuple.svg'
-
-  const logos = [
-    { name: 'Transistor', logo: logoTransistor },
-    { name: 'Tuple', logo: logoTuple },
-    { name: 'StaticKit', logo: logoStaticKit },
-    { name: 'Mirage', logo: logoMirage },
-    { name: 'Laravel', logo: logoLaravel },
-    { name: 'Statamic', logo: logoStatamic },
-     { name: 'Transistor', logo: logoTransistor },
-    { name: 'Tuple', logo: logoTuple },
-    { name: 'StaticKit', logo: logoStaticKit },
-    { name: 'Mirage', logo: logoMirage },
-    { name: 'Laravel', logo: logoLaravel },
-    { name: 'Statamic', logo: logoStatamic },
-     { name: 'Transistor', logo: logoTransistor },
-    { name: 'Tuple', logo: logoTuple },
-    { name: 'StaticKit', logo: logoStaticKit },
-    { name: 'Mirage', logo: logoMirage },
-    { name: 'Laravel', logo: logoLaravel },
-    { name: 'Statamic', logo: logoStatamic }
-  ];
-
 export function Hero() {
   return (
-    <Container className="pb-16 pt-20 text-center lg:pt-32 bg-gradient-to-r from-gray-100 via-blue-100 to-white">
+    <Container className="pb-16 h-screen pt-20 text-center lg:pt-32 bg-gradient-to-r from-gray-100 via-blue-100 to-white">
       <h1 className="mx-auto max-w-4xl font-display text-7xl font-medium tracking-tight text-slate-900 sm:text-6xl">
        Cloud Based 
         <span className="relative whitespace-nowrap text-blue-600">
@@ -62,24 +31,6 @@ export function Hero() {
     Get Started Today
   </Button>
 </div>
-
-      <div className="mt-26 lg:mt-44">
-      <p className="font-display mb-10 text-lg text-slate-900">
-        Trusted by these companies so far
-      </p>
-      <div className="mt-8 overflow-hidden">
-        <div className="animate-marquee flex space-x-8 sm:flex-col sm:space-x-0 sm:space-y-10 xl:flex-row xl:space-y-0">
-          {logos.concat(logos).map((company, index) => (
-            <div key={index} className="flex flex-shrink-0 items-center justify-center gap-x-8 sm:gap-y-10">
-              <Image src={company.logo} alt={company.name} unoptimized />
-            </div>
-          ))}
-        </div>
-      </div>
-      </div>
-      
-
-      
     </Container>
   )
 }
