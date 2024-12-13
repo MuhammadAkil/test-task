@@ -254,8 +254,9 @@ export function Header() {
               </div>
 
               <NavLink href="#pricing" className="text-center md:text-left break-words w-auto lg:w-max">Pricing</NavLink>
-              <NavLink href="#footer" className="text-center md:text-left break-words w-auto lg:w-max" >Chat with us</NavLink>
+              
               <NavLink href="/about" className="text-center md:text-left break-words w-auto lg:w-max">About Us</NavLink>
+              <NavLink href="#footer" className="text-center md:text-left break-words w-auto lg:w-max" >Chat with us</NavLink>
             </div>
 
           </div>
