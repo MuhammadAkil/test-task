@@ -25,9 +25,9 @@ export default function Home() {
     <>
       
       <Hero />
+      <Modules />
       <About />
       <WhyUs />
-      <Modules />
       <Powerup /> 
         <Testimonials />
         <Pricing />

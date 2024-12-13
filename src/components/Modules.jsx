@@ -5,7 +5,7 @@ import integration from "@/images/buycars.webp";
 import { Button } from '@/components/Button'
 const BusinessModules = () => {
   return (
-    <section className="text-center py-16 bg-gradient-to-b from-white to-gray-50">
+    <section className="text-center py-16 bg-gradient-to-b from-white to-gray-50 mt-20">
       <h3 className="text-sm text-black font-bold uppercase tracking-wide">
         Variety of Solutions
       </h3>
