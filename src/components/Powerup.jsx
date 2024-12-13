@@ -13,7 +13,7 @@ const WhyUs = () => {
         <h2 className="font-display text-3xl tracking-tight text-dark sm:text-4xl">
           Powerup your dealership
         </h2>
-        <p className="mt-4 pb-10 text-sm tracking-tight text-gray-700">
+        <p className="mt-4 pb-10 tracking-tight text-gray-700  text-lg">
           Connect the entire deal process seamlessly—from DMS to finance, registration, and titling. Our solutions streamline workflows, reduce paperwork, and minimize errors, helping you process deals faster. Empower your team with tools that improve operational efficiency, enhance customer satisfaction, and maximize dealership profitability. Whether you're managing inventory, tracking sales, or supporting customers, our platform ensures every step is connected and optimized for success.
         </p>
 

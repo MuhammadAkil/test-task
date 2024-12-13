@@ -12,7 +12,7 @@ const BusinessModules = () => {
       <h2 className="text-4xl font-bold text-blue-600 mt-2">
         For All Business Modules
       </h2>
-          <p className="text-gray-600 mt-8 mx-auto max-w-2xl">
+          <p className="text-gray-700  mt-8 mx-auto max-w-2xl">
         Efficient, effective, and built to scale, we provide next-gen tailored
         solutions that allow our clients to stay productive and profitable in an
         ever-changing market.
