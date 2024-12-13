@@ -208,32 +208,7 @@ export function Header() {
 
 
                       </div>
-                      <div className='bg-white p-3 rounded-lg'>
-                        <h6 className="font-semibold w-[22em] sm:w-[18em] md:w-[20em] lg:w-[22em] xl:w-[20em] text-sm sm:text-base md:text-lg lg:text-xl mb-3">For Lenders</h6>
-                        <div className="grid grid-cols-2 gap-4">
-                          <div className="space-y-2">
-                            <h6 className="font-semibold text-sm text-[#07124a]">Lender Overview</h6>
-                            <h6 className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Loan Originations</h6>
-                            <ul className="space-y-2">
-                              <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Credit Application Network</li>
-                              <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Bookout Vehicle Valuations</li>
-                              <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Digital Contracting</li>
-                              <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Digital Document Services</li>
-                            </ul>
-                          </div>
-                          <div className="space-y-2">
-                            <h6 className="font-semibold text-sm text-[#07124a]">F&I Overview</h6>
-                            <ul className="space-y-2">
-                              <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Credit Application</li>
-                              <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Compliance</li>
-                              <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Accelerated Title</li>
-                              <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Menu</li>
-                              <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Aftermarket</li>
-                              <li className="text-sm cursor-pointer text-[#555867] border-l-2 border-[#555867] hover:border-blue-500 hover:text-blue-500 pl-2">Digital Contracting & Signing</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
+                    
                       <div className="bg-blue-900 text-white p-6 rounded-lg w-[22em] sm:w-[18em] md:w-[20em] lg:w-[22em] xl:w-[20em]">
                         <h6 className="font-semibold text-xl">Deal Central</h6>
                         <ul className="space-y-2">
