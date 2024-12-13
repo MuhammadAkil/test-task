@@ -30,12 +30,12 @@ import logoTuple from '@/images/logos/tuple.svg'
     { name: 'Statamic', logo: logoStatamic }
   ];
 
-export function Hero() {
+export function TrustedClient() {
   return (
-    <Container className="pb-16 pt-20 text-center lg:pt-32 ">
-      <div className="mt-26 lg:mt-44">
-      <p className="font-display mb-10 text-lg text-slate-900">
-        Trusted by these companies so far
+    <Container className="pb-16 pt-20 text-center">
+      <div className="mt-26">
+      <p className="font-display mb-10 text-xl text-slate-900">
+        Trusted Companies
       </p>
       <div className="mt-8 overflow-hidden">
         <div className="animate-marquee flex space-x-8 sm:flex-col sm:space-x-0 sm:space-y-10 xl:flex-row xl:space-y-0">

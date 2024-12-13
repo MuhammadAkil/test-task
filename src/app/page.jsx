@@ -10,7 +10,7 @@ import { Hero } from '@/components/Hero';
 import WhyUs from '@/components/Whyus';
 import Powerup from '@/components/Powerup';
 import Modules from '@/components/Modules';
-import Scroll from '@/components/Scroll';
+import Scroll, { TrustedClient } from '@/components/TrustedClient';
 export default function Home() {
 
   const callToActionRef = useRef(null);
@@ -30,7 +30,8 @@ export default function Home() {
       <WhyUs />
       <Powerup /> 
         <Testimonials />
-        <Pricing />
+      <Pricing />
+      <TrustedClient/>
       <Faqs />
       {/* <Scroll /> */}
      
