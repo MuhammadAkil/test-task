@@ -14,30 +14,31 @@ import screenshotVatReturns from '@/images/screenshots/vat-returns.png'
 
 const features = [
   {
-    title: 'Payroll Management',
-    description:
-      "Streamline payroll processing for your dealership. Manage employee salaries and keep records organized with ease. Direct deposit support coming soon!",
+    title: 'Inventory Management',
+   description:
+      "Efficiently manage your vehicle inventory. Track available cars, update stock levels, and monitor vehicle details to streamline sales processes. Integration with supplier systems for automatic inventory updates is coming soon!",
     image: screenshotPayroll,
   },
   {
-    title: 'Expense Tracking',
+    title: 'Sales Tracking',
     description:
-      "Keep dealership expenses in check by organizing receipts and tracking costs efficiently. Input expenses manually or integrate with accounting tools for better control.",
+        "Track all sales activities in real-time. Manage customer data, record sales transactions, and generate sales reports to analyze performance and boost revenue.",
     image: screenshotExpenses,
   },
   {
-    title: 'Tax Management',
+    title: 'Finance & Insurance (F&I) Management',
     description:
-      "Simplify tax processes with DealerTrack. Easily manage tax calculations and reporting for your dealership's operations, ensuring compliance without the hassle.",
+      "Simplify the financing process for your customers. Manage loan approvals, insurance applications, and extended warranties efficiently to provide a seamless car-buying experience.",
     image: screenshotVatReturns,
   },
   {
     title: 'Advanced Reporting',
     description:
-      'Gain deep insights into your dealership’s performance. Export data, analyze trends, and make informed decisions with detailed and customizable reports.',
+      "Gain valuable insights into your dealership’s operations. Analyze sales, expenses, and service data to make informed decisions with customizable and detailed reports.",
     image: screenshotReporting,
   },
 ]
+
 
 
 export function PrimaryFeatures() {
@@ -73,15 +74,15 @@ export function PrimaryFeatures() {
         unoptimized
       />
       <Container className="relative">
-        <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
-          <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            Everything you need to run your books.
-          </h2>
-          <p className="mt-6 text-lg tracking-tight text-blue-100">
-            Well everything you need if you aren’t that picky about minor
-            details like tax compliance.
-          </p>
-        </div>
+      <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
+  <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
+    Everything you need to drive your dealership forward.
+  </h2>
+  <p className="mt-6 text-lg tracking-tight text-blue-100">
+    All the tools you need to manage inventory, track sales, and keep customers satisfied — without worrying about the fine print.
+  </p>
+</div>
+
         <Tab.Group
           as="div"
           className="mt-16 grid grid-cols-1 items-center gap-y-2 pt-10 sm:gap-y-6 md:mt-20 lg:grid-cols-12 lg:pt-0"

@@ -35,10 +35,11 @@ function LightStepA() {
           <Image
             src={slides[currentSlide]}
             alt={`Slide ${currentSlide + 1}`}
-            className="w-full h-full object-cover rounded-lg transition-transform duration-700 ease-in-out"
+            className="w-full h-full object-cover md:object-contain rounded-lg transition-transform duration-700 ease-in-out"
           />
-              </div>
-              
+        </div>
+
+        {/* Navigation Buttons (show only on hover) */}
         {isHovered && (
           <>
             <button
@@ -55,6 +56,8 @@ function LightStepA() {
             </button>
           </>
         )}
+
+        {/* Indicators */}
         <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
           {slides.map((_, index) => (
             <button

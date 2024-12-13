@@ -26,6 +26,7 @@ export default function Home() {
       
       <Hero />
       <Modules />
+      <PrimaryFeatures />
       <About />
       <WhyUs />
       <Powerup /> 
