@@ -161,36 +161,7 @@ export function Pricing() {
     ]}
   />
 
-  <Plan
-    name="Bankers Contract"
-    price="$3.00/mo"
-    href="/register"
-    features={[
-      'Basic Features for Contract Management',
-      'Easy Contract Execution',
-    ]}
-  />
-
-  <Plan
-    featured
-    name="Law Contracts"
-    price="$2.25/mo"
-    href="/register"
-    features={[
-      'Legal Contract Templates',
-      'Efficient Contract Management',
-    ]}
-  />
-
-  <Plan
-    name="eContract Any Deal"
-    price="$3.00/mo"
-    href="/register"
-    features={[
-      'Comprehensive eContract Features',
-      'Flexible Contract Options',
-    ]}
-  />
+  
 </div>
 
       </Container>

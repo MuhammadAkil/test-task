@@ -1,5 +1,8 @@
 import React from "react";
+import Image from "next/image";
+import integration from "@/images/buycars.webp";
 
+import { Button } from '@/components/Button'
 const BusinessModules = () => {
   return (
     <section className="text-center py-16 bg-gradient-to-b from-white to-gray-50">
@@ -9,6 +12,11 @@ const BusinessModules = () => {
       <h2 className="text-4xl font-bold text-blue-600 mt-2">
         For All Business Modules
       </h2>
+          <p className="text-gray-600 mt-8 mx-auto max-w-2xl">
+        Efficient, effective, and built to scale, we provide next-gen tailored
+        solutions that allow our clients to stay productive and profitable in an
+        ever-changing market.
+      </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-10 px-4">
         <div className="flex flex-col items-center">
@@ -75,15 +83,23 @@ const BusinessModules = () => {
         </div>
       </div>
 
-      <p className="text-gray-600 mt-8 mx-auto max-w-2xl">
-        Efficient, effective, and built to scale, we provide next-gen tailored
-        solutions that allow our clients to stay productive and profitable in an
-        ever-changing market.
-      </p>
+  
 
-      {/* <button className="mt-8 px-6 py-2 bg-white text-blue-600 font-semibold border border-blue-600 rounded-full hover:bg-blue-600 hover:text-white transition" >
-        Discover All Services
-      </button> */}
+       <Button 
+          href="/solutions" 
+          className="transform mt-10 mb-6 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
+        >
+          Explore our Services
+        </Button>
+
+      <div className="w-full rounded-lg md:mt-0 mt-12 flex justify-center">
+  <Image
+    src={integration}
+    alt="Powerup your dealership with DMS software"
+    className="rounded-lg w-full h-auto md:w-[1200px] md:h-[500px]"
+  />
+</div>
+
     </section>
   );
 };
