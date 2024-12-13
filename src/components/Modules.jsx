@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import integration from "@/images/buycars.webp";
+import integration from "@/images/buycars.png";
 
 import { Button } from '@/components/Button'
 const BusinessModules = () => {

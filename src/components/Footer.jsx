@@ -8,12 +8,12 @@ export function Footer() {
   return (
     <footer className="bg-gray-100 text-gray-700" id="footer">
       <Container>
-        <div className="py-12">
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-8 text-center md:text-left">
-            <div className="md:col-span-1 flex flex-col items-center md:items-start">
+        <div className="py-12 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-6 gap-8 text-center md:text-left">
+            <div className="md:col-span-2 flex flex-col items-center md:items-start">
               <Logo className="h-12 mb-4" />
               <p className="text-sm text-gray-500">
-                Your Goals Matter. Let’s Crush Them Together.
+                Your Goals Matter. Let’s Crush <br /> Them Together.
               </p>
             </div>
             <div className="md:col-span-4 grid grid-cols-2 md:grid-cols-4 gap-6">
