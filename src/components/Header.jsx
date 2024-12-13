@@ -241,7 +241,7 @@ export function Header() {
                             Be one of the first dealers to experience the technology, insights, and guidance from our most powerful retail solution yet.
                           </p>
 
-                          <Button href="/register" className="bg-yellow-500 text-black rounded-md hover:bg-yellow-600 px-4 py-2 shadow-md">
+                          <Button href="/" className="bg-yellow-500 text-black rounded-md hover:bg-yellow-600 px-4 py-2 shadow-md">
                             <span>
                               Get started <span className="hidden lg:inline">today</span>
                             </span>
@@ -262,7 +262,7 @@ export function Header() {
           </div>
           <div className="flex items-center gap-x-4 md:gap-x-5">
 
-            <Button href="/register" className="bg-yellow-500 text-black rounded-md hover:bg-yellow-600 px-4 py-2 shadow-md">
+            <Button href="/" className="bg-yellow-500 text-black rounded-md hover:bg-yellow-600 px-4 py-2 shadow-md">
               <span>
                 Get started <span className="hidden lg:inline">today</span>
               </span>

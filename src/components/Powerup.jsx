@@ -17,7 +17,7 @@ const WhyUs = () => {
           Connect the entire deal process seamlessly—from DMS to finance, registration, and titling. Our solutions streamline workflows, reduce paperwork, and minimize errors, helping you process deals faster. Empower your team with tools that improve operational efficiency, enhance customer satisfaction, and maximize dealership profitability. Whether you're managing inventory, tracking sales, or supporting customers, our platform ensures every step is connected and optimized for success.
         </p>
 
-        <Button href="/register" className="bg-[#2563EB] text-black rounded-md px-4 py-2 shadow-md">
+        <Button href="/" className="bg-[#2563EB] text-black rounded-md px-4 py-2 shadow-md">
           <span>
             Get started <span className="hidden lg:inline">today</span>
           </span>

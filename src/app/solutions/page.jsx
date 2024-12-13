@@ -94,7 +94,7 @@ export default function Services() {
             </ul>
             
              <div className='my-10'>
-              <Button href="/register" className="bg-blue-500 text-black rounded-pill hover:bg-yellow-600 px-4 py-2 shadow-md">
+              <Button href="/" className="bg-blue-500 text-black rounded-pill hover:bg-yellow-600 px-4 py-2 shadow-md">
                 <span>
                   Learn More
                 </span>
@@ -132,7 +132,7 @@ export default function Services() {
         <li>Available on Mobile App</li>
             </ul>
             <div className='my-10'>
-              <Button href="/register" className="bg-blue-500 text-black rounded-pill hover:bg-yellow-600 px-4 py-2 shadow-md">
+              <Button href="/" className="bg-blue-500 text-black rounded-pill hover:bg-yellow-600 px-4 py-2 shadow-md">
                 <span>
                   Learn More
                 </span>
@@ -182,7 +182,7 @@ export default function Services() {
         <li>Available on Mobile App</li>
             </ul>
             <div className='my-10'>
-              <Button href="/register" className="bg-blue-500 text-black rounded-pill hover:bg-yellow-600 px-4 py-2 shadow-md">
+              <Button href="/" className="bg-blue-500 text-black rounded-pill hover:bg-yellow-600 px-4 py-2 shadow-md">
                 <span>
                   Learn More
                 </span>
@@ -215,7 +215,7 @@ export default function Services() {
         <li>Dashboards, Reporting & Analytics</li>
             </ul>
             <div className='my-10'>
-              <Button href="/register" className="bg-blue-500 text-black rounded-pill hover:bg-yellow-600 px-4 py-2 shadow-md">
+              <Button href="/" className="bg-blue-500 text-black rounded-pill hover:bg-yellow-600 px-4 py-2 shadow-md">
                 <span>
                   Learn More
                 </span>
@@ -263,7 +263,7 @@ export default function Services() {
         <li>Instant Chat, Video Calling, and Facebook Messenger in Integrated Messaging Center</li>
             </ul>
             <div className='my-10'>
-              <Button href="/register" className="bg-blue-500 text-black rounded-pill hover:bg-yellow-600 px-4 py-2 shadow-md">
+              <Button href="/" className="bg-blue-500 text-black rounded-pill hover:bg-yellow-600 px-4 py-2 shadow-md">
                 <span>
                   Learn More
                 </span>
@@ -299,7 +299,7 @@ export default function Services() {
         <li>Dashboards, Reporting & Analytics</li>
             </ul>
             <div className='my-10'>
-              <Button href="/register" className="bg-blue-500 text-black rounded-pill hover:bg-yellow-600 px-4 py-2 shadow-md">
+              <Button href="/" className="bg-blue-500 text-black rounded-pill hover:bg-yellow-600 px-4 py-2 shadow-md">
                 <span>
                   Learn More
                 </span>
@@ -344,7 +344,7 @@ export default function Services() {
         <li>Access to 30+ marketing sites such as Facebook Marketplace, OfferUp, and CarGurus!</li>
             </ul>
             <div className='my-10'>
-              <Button href="/register" className="bg-blue-500 text-black rounded-pill hover:bg-yellow-600 px-4 py-2 shadow-md">
+              <Button href="/" className="bg-blue-500 text-black rounded-pill hover:bg-yellow-600 px-4 py-2 shadow-md">
                 <span>
                   Learn More
                 </span>
@@ -376,7 +376,7 @@ export default function Services() {
         <li>Display Decisions Based on your Desired Gross</li>
             </ul>
             <div className='my-10'>
-              <Button href="/register" className="bg-blue-500 text-black rounded-pill hover:bg-yellow-600 px-4 py-2 shadow-md">
+              <Button href="/" className="bg-blue-500 text-black rounded-pill hover:bg-yellow-600 px-4 py-2 shadow-md">
                 <span>
                   Learn More
                 </span>
@@ -427,7 +427,7 @@ export default function Services() {
             <li>Measure the Effectiveness of Your Website Traffic</li>
             </ul>
             <div className='my-10'>
-              <Button href="/register" className="bg-blue-500 text-black rounded-pill hover:bg-yellow-600 px-4 py-2 shadow-md">
+              <Button href="/" className="bg-blue-500 text-black rounded-pill hover:bg-yellow-600 px-4 py-2 shadow-md">
                 <span>
                   Learn More
                 </span>
@@ -447,7 +447,7 @@ export default function Services() {
   Connect the entire deal process seamlessly—from DMS to finance, registration, and titling. Our solutions streamline workflows, reduce paperwork, and minimize errors, helping you process deals faster. Empower your team with tools that improve operational efficiency, enhance customer satisfaction, and maximize dealership profitability. Whether you're managing inventory, tracking sales, or supporting customers, our platform ensures every step is connected and optimized for success.
 </p>
 
-            <Button href="/register" className="bg-[#2563EB] text-black rounded-md  px-4 py-2 shadow-md">
+            <Button href="/" className="bg-[#2563EB] text-black rounded-md  px-4 py-2 shadow-md">
               <span>
                 Get started <span className="hidden lg:inline">today</span>
               </span>

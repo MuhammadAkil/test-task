@@ -120,7 +120,7 @@ export function Pricing() {
     name="DMS"
     price="$79/mo"
     description="For freelancers and individuals just starting out."
-    href="/register"
+    href="/"
     features={[
       'RouteOne, Dealertrack, and CUDL Access',
       'Full Inventory Management',
@@ -136,7 +136,7 @@ export function Pricing() {
     name="Buy Here Pay Here"
     price="$50/mo"
     description="Best for growing businesses and teams."
-    href="/register"
+    href="/"
     features={[
       'Total Portfolio Management',
       'Dataline Credit Bureau Reporting Services',
@@ -151,7 +151,7 @@ export function Pricing() {
     name="QuickBooks"
     price="$40/mo"
     description="For large organizations with custom needs."
-    href="/register"
+    href="/"
     features={[
       'Track All Vehicle Sales and Cost Transactions',
       'Your GL Chart of Accounts',
