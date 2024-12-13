@@ -6,7 +6,7 @@ import assist from "@/images/assist.jpg";
 import values from "@/images/values.jpg";
 function LightStepA() {
   return (
-    <section className="text-gray-600 body-font">
+    <section className="text-gray-600 body-font px-4" >
       <div className="container px-5 py-14 mx-auto  flex flex-wrap">
        <div className="flex flex-wrap w-full">
   <div className="w-full text-center mb-20">

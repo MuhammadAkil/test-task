@@ -30,7 +30,7 @@ import logoTuple from '@/images/logos/tuple.svg'
     { name: 'Statamic', logo: logoStatamic }
   ];
 
-export function Hero() {
+export function Scroll() {
   return (
     <Container className="pb-16 pt-20 text-center lg:pt-32 ">
       <div className="mt-26 lg:mt-44">
