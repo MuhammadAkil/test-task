@@ -20,7 +20,7 @@ function LightStepA(props) {
   Dealer Track is a comprehensive dealership management software designed to help dealerships automate and optimize their daily operations. It provides tools for managing inventory, sales, customer service, and finance, ensuring real-time updates and accurate tracking. The platform centralizes customer interactions, enabling personalized service and improving customer satisfaction and loyalty. Dealer Track also facilitates efficient communication with suppliers and offers advanced analytics to drive data-based decisions. With its integrated features, Dealer Track helps dealerships streamline operations, enhance customer service, and achieve business growth.
             </p>
             
-                    <Button href="/register" className="bg-[#2563EB] text-black rounded-md px-4 py-2 shadow-md">
+                    <Button href="/" className="bg-[#2563EB] text-black rounded-md px-4 py-2 shadow-md">
                       <span>
                         Learn More <span className="hidden lg:inline"></span>
                       </span>

@@ -58,7 +58,7 @@ export const CallToAction = forwardRef((props, ref) => (
             </ul>
 
             <div className='my-10'>
-              <Button href="/register" className="bg-blue-500 text-black rounded-pill hover:bg-yellow-600 px-4 py-2 shadow-md">
+              <Button href="/" className="bg-blue-500 text-black rounded-pill hover:bg-yellow-600 px-4 py-2 shadow-md">
                 <span>
                   Learn More
                 </span>

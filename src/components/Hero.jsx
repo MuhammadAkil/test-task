@@ -3,7 +3,7 @@ import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 export function Hero() {
   return (
-    <Container className="pb-16 h-screen pt-20 text-center lg:pt-32 bg-gradient-to-r from-gray-100 via-blue-100 to-white">
+    <Container className="pb-16 h-screen !max-w-full pt-20 text-center lg:pt-32 bg-gradient-to-r from-gray-100 via-blue-100 to-white">
       <h1 className="mx-auto max-w-4xl font-display text-7xl font-medium tracking-tight text-slate-900 sm:text-6xl">
        Cloud Based 
         <span className="relative whitespace-nowrap text-blue-600">
@@ -25,7 +25,7 @@ export function Hero() {
       </p>
     <div className="mt-10 flex justify-center gap-x-6 animate-fade-in">
   <Button 
-    href="/register" 
+    href="/" 
     className="transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
   >
     Get Started Today

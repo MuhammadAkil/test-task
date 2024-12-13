@@ -129,7 +129,7 @@ function LightStepA() {
       Join hundreds of successful dealerships that trust Dealer Track for their operations.
     </p>
     <a
-      href="/register"
+      href="/"
       className="inline-block bg-blue-600 text-white font-medium py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300"
     >
       Get Started Today

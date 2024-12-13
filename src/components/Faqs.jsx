@@ -54,7 +54,7 @@ export function Faqs() {
         unoptimized
       />
       <Container className="relative max-w-3xl w-full">
-        <div className="text-center mx-auto max-w-2xl lg:mx-0">
+        <div className="text-center mx-auto max-w-2xl">
           <h2
             id="faq-title"
             className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl"
