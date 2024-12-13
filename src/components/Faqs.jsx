@@ -28,32 +28,8 @@ const faqs = [
     question: 'How can I improve my digital marketing with DealerCenter?',
     answer:
       'DealerCenter offers automated classified listings, SEO services, PPC ad management, and retargeting on the Google Display Network.',
-  },
-  {
-    question: 'Can I create and manage customer relationships with DealerCenter?',
-    answer:
-      'Absolutely! DealerCenter’s CRM suite helps manage customer activity, leads, and communications through SMS, email, chat, and video.',
-  },
-  {
-    question: 'Does DealerCenter offer vehicle registration and titling services?',
-    answer:
-      'Yes, DealerCenter supports vehicle registration, titling, and temporary tags.',
-  },
-  {
-    question: 'Can I generate custom reports and dashboards?',
-    answer:
-      'Yes, DealerCenter allows you to create custom reports and dashboards, analyze ROI, and receive scheduled reports via email.',
-  },
-  {
-    question: 'Is there a website solution available with DealerCenter?',
-    answer:
-      'Yes, DealerCenter offers custom responsive websites, SSL hosting, lead integration, and support for third-party widgets.',
-  },
-  {
-    question: 'Does DealerCenter support digital retailing for online shoppers?',
-    answer:
-      'Yes, DealerCenter’s Digital Retailing Solution allows customers to personalize payments, prequalify for financing, and view lender decisions.',
-  },
+  }
+  
 ];
 
 export function Faqs() {
