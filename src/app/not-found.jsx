@@ -12,7 +12,7 @@ export default function NotFound() {
           <Logo className="h-10 w-auto" />
         </Link>
       </div>
-      <p className="mt-20 text-sm font-medium text-gray-700">404</p>
+      <p className="mt-10 text-sm font-medium text-gray-700">404</p>
       <h1 className="mt-3 text-lg font-semibold text-gray-900">
         Page not found
       </h1>
