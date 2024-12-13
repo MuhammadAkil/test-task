@@ -23,15 +23,16 @@ function LightStepA() {
     />
   </div>
   <div className="lg:w-1/2 md:w-1/2 md:pl-10 md:py-6">
-    <p className="mt-4 pb-10 text-sm tracking-tight text-gray-700">
-      Dealer Track is an advanced and all-encompassing dealership management software designed to empower automotive dealerships by automating, optimizing, and streamlining their day-to-day operations. Tailored specifically to address the evolving challenges faced by modern dealerships, Dealer Track provides an integrated suite of tools that covers every aspect of dealership management, including inventory control, sales tracking, customer service, finance, and more.
+   <p className="mt-4 pb-10 text-sm tracking-tight text-gray-700">
+  Dealer Track is a comprehensive dealership management software designed to streamline and automate the day-to-day operations of automotive dealerships. It offers an integrated suite of tools for inventory control, sales tracking, customer service, finance, and more.
 
-      With Dealer Track, dealers can effortlessly manage their entire vehicle inventory, ensuring accurate, real-time updates for product listings, availability, and pricing. The software also streamlines sales processes, allowing teams to track leads, manage transactions, and close deals efficiently. In addition, robust finance management tools simplify payment processing, invoicing, and accounting tasks, reducing manual work and minimizing errors.
+  With Dealer Track, dealers can efficiently manage their vehicle inventory, ensuring real-time updates for listings, availability, and pricing. The software simplifies sales processes, tracks leads, manages transactions, and facilitates smooth deal closures. Finance management tools automate payment processing, invoicing, and accounting, reducing manual errors.
 
-      Dealer Track’s centralized customer relationship management (CRM) system consolidates all interactions, from initial inquiries to post-sale support. This ensures personalized communication, enhances customer satisfaction, and fosters long-term loyalty. Powerful analytics and reporting capabilities provide real-time insights into performance metrics, helping dealerships identify trends, optimize strategies, and make data-driven decisions to boost profitability.
+  The centralized CRM system ensures personalized communication and enhances customer satisfaction, while powerful analytics provide insights into performance metrics, helping dealerships optimize strategies and boost profitability.
 
-      Designed with seamless communication in mind, Dealer Track enables smooth collaboration between dealerships, suppliers, and customers. Whether you're focused on improving operational efficiency, enhancing customer experiences, or accelerating business growth, Dealer Track equips your team with the tools to succeed in today’s competitive market.
-    </p>
+  Designed for seamless collaboration, Dealer Track improves operational efficiency, enhances customer experiences, and accelerates business growth in today's competitive market.
+</p>
+
   </div>
         </div>
         
