@@ -118,7 +118,8 @@ export function Header() {
                 >
                   <NavLink href="/solutions" className="flex items-center text-gray-800">
                     <span>Solutions</span>
-                    <FaChevronDown className={`ml-1 transition-transform ${isSolutionsOpen ? 'rotate-180' : ''}`} />
+                    <FaChevronDown className={`ml-1 transition-transform `} />
+                    {/* ${isSolutionsOpen ? 'rotate-180' : ''} */}
                   </NavLink>
                 </div>
                 {isSolutionsOpen && (

@@ -39,7 +39,7 @@ export function Hero() {
       <div className="mt-10 flex justify-center gap-x-6 animate-fade-in">
         <Button
           href="/"
-          className="transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
+          className="button transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
         >
           Get Started Today
         </Button>

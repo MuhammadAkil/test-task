@@ -11,6 +11,7 @@ import WhyUs from '@/components/Whyus';
 import Powerup from '@/components/Powerup';
 import Modules from '@/components/Modules';
 import Scroll, { TrustedClient } from '@/components/TrustedClient';
+import { CallToAction } from '@/components/CallToAction';
 export default function Home() {
 
   const callToActionRef = useRef(null);
@@ -33,6 +34,8 @@ export default function Home() {
       <Pricing />
       <TrustedClient/>
       <Faqs />
+       
+      {/* <CallToAction/> */}
       {/* <Scroll /> */}
      
     </>

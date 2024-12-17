@@ -102,3 +102,9 @@
   }
 }
 
+
+.button:hover {
+  background: linear-gradient(#070707, #687aff) padding-box, 
+              linear-gradient(var(--angle), #687aff, #131219) border-box;
+  color: #687aff; 
+}
