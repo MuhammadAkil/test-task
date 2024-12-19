@@ -4,9 +4,9 @@ import Typewriter from 'typewriter-effect';
 
 export function Hero() {
   return (
-    <Container className="pb-16 h-screen !max-w-full pt-20 lg:pt-40 text-center lg:pt-32 bg-gradient-to-r from-gray-100 via-blue-100 to-white">
+    <Container className=" h-screen !max-w-full flex flex-col items-center justify-center text-center bg-gradient-to-r from-gray-100 via-blue-100 to-white">
       <h1 className="mx-auto max-w-4xl font-display text-7xl font-medium tracking-tight text-slate-900 sm:text-6xl">
-        Cloud Based
+        We Offers 
         <span className="relative whitespace-nowrap text-blue-600">
           <svg
             aria-hidden="true"
@@ -22,7 +22,7 @@ export function Hero() {
         <span className=" mx-auto max-w-4xl font-display text-7xl font-medium tracking-tight text-blue-600 sm:text-6xl">
           <Typewriter
             options={{
-              strings: ['DEALING Solutions', 'Car Solutions', 'DMS Solutions'],
+            strings: ['Drive Efficiency', 'Boost Sales', 'Delight Customers'],
               autoStart: true,
               loop: true,
               delay: 75,
@@ -33,8 +33,7 @@ export function Hero() {
         </span>
       </div>
       <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
-        Most bookkeeping software is accurate, but hard to use. We make the
-        opposite trade-off, and hope you don’t get audited.
+        Dealerheim is the all-in-one software solution to manage your inventory, sales, and customer relationships seamlessly.
       </p>
       <div className="mt-10 flex justify-center gap-x-6 animate-fade-in">
         <Button
