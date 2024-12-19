@@ -34,7 +34,7 @@ export function TrustedClient() {
   return (
     <Container className="pb-16 pt-20 text-center">
       <div className="mt-26">
-      <p className="font-display mb-10 text-xl text-slate-900">
+      <p className="font-display mb-10 text-xl lg:text-3xl font-normal text-slate-900">
         Trusted Companies
       </p>
       <div className="mt-8 overflow-hidden">

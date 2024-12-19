@@ -6,18 +6,15 @@ import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import screenshotContacts from '@/images/screenshots/contacts.png'
-import screenshotInventory from '@/images/screenshots/inventory.png'
-import screenshotProfitLoss from '@/images/screenshots/profit-loss.png'
+
 
 
 const features = [
   {
     name: 'Real-Time Reporting',
-    summary: 'Gain insights into dealership performance with dynamic reporting tools.',
+    summary: 'Get real-time insights into your dealerships performance',
     description:
       'Our real-time reporting feature provides you with a clear overview of your dealership’s performance. Access detailed sales reports, track customer trends, and monitor key metrics effortlessly with customizable dashboards.',
-    image: screenshotProfitLoss,
     icon: function ReportingIcon() {
       let id = useId()
       return (
@@ -51,7 +48,6 @@ const features = [
     summary: 'Optimize inventory handling and keep track of all your vehicles.',
     description:
       'Easily manage vehicle inventory, track in-stock and sold vehicles, and set alerts for restocking popular models. With DealerTrack’s intuitive interface, inventory management becomes a hassle-free experience.',
-    image: screenshotInventory,
     icon: function InventoryIcon() {
       return (
         <>
@@ -78,7 +74,6 @@ const features = [
     summary: 'Build stronger relationships with customers and track interactions.',
     description:
       'DealerTrack’s CRM feature lets you manage customer information, track communications, and schedule follow-ups. Strengthen your customer relationships and ensure no opportunity is missed.',
-    image: screenshotContacts,
     icon: function ContactsIcon() {
       return (
         <>
@@ -95,19 +90,98 @@ const features = [
       )
     },
   },
+  {
+    name: 'Lead Tracking & Management',
+    summary: 'Track and manage leads efficiently.',
+    description:
+      'With DealerTrack’s Lead Management, you can easily track potential leads, categorize them by status, and ensure timely follow-ups. Gain more insights to convert leads into sales.',
+    icon: function LeadIcon() {
+      return (
+        <>
+          <path
+            opacity=".5"
+            d="M8 17a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z"
+            fill="#fff"
+          />
+          <path
+            opacity=".3"
+            d="M8 24a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 1-1v-2Z"
+            fill="#fff"
+          />
+          <path
+            d="M8 10a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z"
+            fill="#fff"
+          />
+        </>
+      )
+    },
+  },
+  {
+    name: 'Sales Performance Analytics',
+    summary: 'Analyze and optimize sales performance with detailed reports.',
+    description:
+      'DealerTrack’s analytics provide a deep dive into sales performance, helping you identify top-performing vehicles, successful salespeople, and trends to optimize your sales strategy.',
+    icon: function SalesIcon() {
+      return (
+        <>
+          <path
+            opacity=".5"
+            d="M8 17a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z"
+            fill="#fff"
+          />
+          <path
+            opacity=".3"
+            d="M8 24a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 1-1v-2Z"
+            fill="#fff"
+          />
+          <path
+            d="M8 10a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z"
+            fill="#fff"
+          />
+        </>
+      )
+    },
+  },
+  {
+    name: 'Finance & Insurance (F&I) Management',
+    summary: 'Streamline the finance and insurance processes.',
+    description:
+      'Simplify the F&I process with DealerTrack. Manage customer financing, offer personalized insurance options, and track approvals easily through an intuitive interface.',
+    icon: function FinanceIcon() {
+      return (
+        <>
+          <path
+            opacity=".5"
+            d="M8 17a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z"
+            fill="#fff"
+          />
+          <path
+            opacity=".3"
+            d="M8 24a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 1-1v-2Z"
+            fill="#fff"
+          />
+          <path
+            d="M8 10a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z"
+            fill="#fff"
+          />
+        </>
+      )
+    },
+  },
 ]
+
 
 
 function Feature({ feature, isActive, className, ...props }) {
   return (
     <div
-      className={clsx(className, !isActive && 'opacity-75 hover:opacity-100')}
+      className={clsx(className, !isActive && '')}
       {...props}
     >
       <div
         className={clsx(
-          'w-9 rounded-lg',
-          isActive ? 'bg-blue-600' : 'bg-slate-500',
+          'w-9 rounded-lg bg-blue-600',
+          // isActive ? 'bg-blue-600' : 'bg-slate-500',
         )}
       >
         <svg aria-hidden="true" className="h-9 w-9" fill="none">
@@ -116,8 +190,8 @@ function Feature({ feature, isActive, className, ...props }) {
       </div>
       <h3
         className={clsx(
-          'mt-6 text-sm font-medium',
-          isActive ? 'text-blue-600' : 'text-slate-600',
+          'mt-6 text-sm font-medium text-blue-600',
+          // isActive ? 'text-blue-600' : 'text-slate-600',
         )}
       >
         {feature.name}
@@ -125,7 +199,7 @@ function Feature({ feature, isActive, className, ...props }) {
       <p className="mt-2 font-display text-xl text-slate-900">
         {feature.summary}
       </p>
-      <p className="mt-4 text-sm text-slate-600">{feature.description}</p>
+      <p className="mt-4 text-sm  text-slate-600">{feature.description}</p>
     </div>
   )
 }
@@ -158,7 +232,7 @@ function FeaturesDesktop() {
     <Tab.Group as="div" className="hidden lg:mt-20 lg:block">
       {({ selectedIndex }) => (
         <>
-          <Tab.List className="grid grid-cols-3 gap-x-8">
+          <Tab.List className="grid grid-cols-3 gap-8">
             {features.map((feature, featureIndex) => (
               <Feature
                 key={feature.summary}
@@ -176,7 +250,7 @@ function FeaturesDesktop() {
               />
             ))}
           </Tab.List>
-          <Tab.Panels className="relative mt-20 overflow-hidden rounded-4xl bg-slate-200 px-14 py-16 xl:px-16">
+          {/* <Tab.Panels className="relative mt-20 overflow-hidden rounded-4xl bg-slate-200 px-14 py-16 xl:px-16">
             <div className="-mx-5 flex">
               {features.map((feature, featureIndex) => (
                 <Tab.Panel
@@ -201,7 +275,7 @@ function FeaturesDesktop() {
               ))}
             </div>
             <div className="pointer-events-none absolute inset-0 rounded-4xl ring-1 ring-inset ring-slate-900/10" />
-          </Tab.Panels>
+          </Tab.Panels> */}
         </>
       )}
     </Tab.Group>
